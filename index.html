@@ -1,652 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio de Mathis Boy — développeur full-stack, product builder et créateur de systèmes numériques : web, automatisation, IA, Minecraft et infrastructure." />
-  <meta name="theme-color" content="#070708" />
-  <meta name="portfolio-build" content="V5.0 standalone" />
-  <meta property="og:title" content="Mathis Boy — Full-Stack Developer & Product Builder" />
-  <meta property="og:description" content="Portfolio de Mathis Boy : produits web, logiciels, automatisation, IA, systèmes Minecraft, UI/UX et infrastructure." />
-  <title>Mathis Boy — Full-Stack Developer & Product Builder</title>
-  <meta property="og:type" content="website" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="color-scheme" content="dark" />
-  <meta name="author" content="Mathis Boy" />
-  <meta name="application-name" content="Mathis Boy Portfolio" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mathis Boy — Full-Stack Developer & Product Builder" />
-  <meta name="twitter:description" content="Web, software, AI automation, Minecraft engineering, UI/UX and infrastructure." />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2218%22 fill=%22%23f4f2ed%22/%3E%3Ctext x=%2232%22 y=%2239%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2221%22 font-weight=%22900%22 fill=%22%23070708%22%3EMB%3C/text%3E%3C/svg%3E" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mathis Boy — Full‑Stack Developer & Product Builder</title>
+  <meta name="description" content="Portfolio de Mathis Boy (LégendeUrbaine) — développement full‑stack, produits web, automatisation IA, infrastructure et systèmes Minecraft.">
+  <meta name="author" content="Mathis Boy">
+  <meta name="theme-color" content="#07080b">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://legendeurbaine.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://legendeurbaine.github.io/">
+  <meta property="og:title" content="Mathis Boy — Full‑Stack Developer & Product Builder">
+  <meta property="og:description" content="Web, AI automation, infrastructure, product engineering & Minecraft systems.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mathis Boy — Full‑Stack Developer & Product Builder">
+  <meta name="twitter:description" content="Web, AI automation, infrastructure, product engineering & Minecraft systems.">
+  <meta name="portfolio-build" content="V6.0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f4f6fb'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial' font-size='23' font-weight='900' fill='%2307080b'%3EMB%3C/text%3E%3C/svg%3E">
+  <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Mathis Boy",
+    "alternateName":"LégendeUrbaine",
+    "url":"https://legendeurbaine.github.io/",
+    "jobTitle":"Full-Stack Developer & Product Builder",
+    "sameAs":[
+      "https://github.com/LegendeUrbaine",
+      "https://www.furycraft.fr"
+    ],
+    "knowsAbout":["Full-stack development","AI automation","Web development","Infrastructure","Minecraft engineering","Product engineering"]
+  }
+  </script>
   <style>
-:root{
-  --bg:#070708;--bg2:#0b0b0d;--fg:#f4f2ed;--muted:#98979d;--line:rgba(255,255,255,.12);
-  --purple:#8a64ff;--blue:#57c7ff;--cyan:#65f0e7;--orange:#ff9b50;--green:#6ef2a6;
-  --shell:1320px;--radius:30px;--ease:cubic-bezier(.2,.8,.2,1)
-}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.shell{width:min(calc(100% - 44px),var(--shell));margin-inline:auto}.noise{position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.032;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}.scroll-progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--purple),var(--blue));z-index:9999}.preloader{position:fixed;inset:0;background:#050506;z-index:99999;display:grid;place-items:center;align-content:center;gap:22px;transition:opacity .7s var(--ease),visibility .7s}.preloader.hide{opacity:0;visibility:hidden}.preloader-mark{font-size:clamp(4rem,12vw,10rem);font-weight:950;letter-spacing:-.1em}.preloader-line{width:min(360px,70vw);height:2px;background:#1d1d21;overflow:hidden}.preloader-line span{display:block;height:100%;width:100%;background:#fff;transform:translateX(-100%);animation:load 1.2s var(--ease) forwards}.preloader-copy{font-size:.7rem;letter-spacing:.25em;color:#777782}@keyframes load{to{transform:none}}
-.cursor{position:fixed;left:0;top:0;width:18px;height:18px;border-radius:50%;background:#fff;mix-blend-mode:difference;pointer-events:none;z-index:10000;transform:translate(-50%,-50%);display:grid;place-items:center;transition:width .25s var(--ease),height .25s var(--ease),background .25s}.cursor span{font-size:0;letter-spacing:.15em;color:#000}.cursor.view{width:80px;height:80px;mix-blend-mode:normal;background:#fff}.cursor.view span{font-size:.63rem;font-weight:900}.topbar{position:fixed;top:0;left:0;right:0;z-index:100;border-bottom:1px solid transparent;transition:.3s}.topbar.scrolled{background:rgba(7,7,8,.68);backdrop-filter:blur(20px) saturate(160%);border-bottom-color:var(--line)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px}.brand-glyph{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:#f5f3ef;color:#0a0a0b;font-size:.78rem;font-weight:950}.brand-copy{display:grid;line-height:1.1}.brand-copy b{font-size:.88rem}.brand-copy small{font-size:.66rem;color:var(--muted);margin-top:4px}.nav-links{display:flex;gap:27px;font-size:.78rem;color:#b6b4bb;text-transform:uppercase;letter-spacing:.08em}.nav-links a{position:relative}.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;background:#fff;transition:.3s}.nav-links a:hover:after{right:0}.nav-right{display:flex;align-items:center;gap:12px}.availability{display:flex;align-items:center;gap:9px;font-size:.72rem;color:#bdbcc2;border:1px solid var(--line);border-radius:999px;padding:8px 12px}.availability i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 16px rgba(110,242,166,.7)}.round-link{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);font-size:1.2rem;background:rgba(255,255,255,.03)}
-.hero{min-height:100svh;padding:128px 0 42px;display:flex;flex-direction:column;justify-content:center}.hero-grid{display:grid;grid-template-columns:1.13fr .87fr;gap:34px;align-items:center}.eyebrow,.section-kicker{font-size:.7rem;letter-spacing:.2em;font-weight:800;color:var(--muted);text-transform:uppercase}.hero-title{font-size:clamp(5rem,10.7vw,10.5rem);line-height:.75;letter-spacing:-.085em;margin:25px 0 30px;font-weight:950}.hero-line{display:block}.line-b{color:transparent;-webkit-text-stroke:1px rgba(244,242,237,.42);transform:translateX(8%)}.line-c{transform:translateX(2%)}.hero-intro{max-width:640px;color:#aaa9b0;font-size:1.06rem;line-height:1.7}.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}.button{min-height:50px;border-radius:999px;padding:0 19px;display:inline-flex;align-items:center;justify-content:center;gap:28px;font-size:.78rem;font-weight:850;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--line);transition:transform .25s var(--ease),background .25s}.button.primary{background:#f5f3ef;color:#0a0a0b;border-color:transparent}.button.ghost{background:rgba(255,255,255,.035)}.hero-stage{height:min(69vh,690px);min-height:500px;position:relative;border:1px solid var(--line);border-radius:34px;overflow:hidden;background:radial-gradient(circle at 50% 45%,rgba(138,100,255,.15),transparent 30%),linear-gradient(155deg,#0e0e13,#09090c 64%);box-shadow:0 35px 100px rgba(0,0,0,.42)}#heroCanvas{position:absolute;inset:0;width:100%;height:100%;display:block}.stage-fallback{position:absolute;inset:0;display:grid;place-items:center;z-index:0}.orb{width:38%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 25%,#fff 0 2%,#bc9cff 7%,#654cff 30%,#151020 66%,#050506 74%);box-shadow:0 0 100px rgba(112,77,255,.3)}.orbit{position:absolute;width:58%;aspect-ratio:1;border:1px solid rgba(255,255,255,.13);border-radius:50%;transform:rotateX(68deg) rotateZ(22deg)}.orbit-b{width:75%;transform:rotateX(72deg) rotateZ(-30deg)}.stage-hud{position:absolute;z-index:2;font-size:.58rem;letter-spacing:.13em;color:#85838b;display:flex;gap:10px;align-items:center}.stage-hud b{color:#d8d6dc}.top-left{top:18px;left:19px}.top-right{top:18px;right:19px}.bottom-left{left:19px;bottom:18px}.bottom-right{right:19px;bottom:18px}.hero-meta{margin-top:38px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}.hero-meta>div{padding:19px 22px 19px 0;border-right:1px solid var(--line);display:grid;gap:4px}.hero-meta>div:not(:first-child){padding-left:22px}.hero-meta>div:last-child{border-right:0}.hero-meta span{font-size:.58rem;color:#66656d}.hero-meta b{font-size:.8rem}.hero-meta small{font-size:.68rem;color:var(--muted)}
-.marquee-section{overflow:hidden;border-bottom:1px solid var(--line);padding:21px 0}.marquee-track{display:flex;align-items:center;width:max-content;gap:28px;animation:marquee 38s linear infinite;white-space:nowrap}.marquee-track span{font-size:.78rem;letter-spacing:.12em;font-weight:800;color:#bdbcc4}.marquee-track i{font-style:normal;color:var(--purple)}@keyframes marquee{to{transform:translateX(-50%)}}
-.section{padding:130px 0}.section-top{display:grid;grid-template-columns:1.2fr .8fr;align-items:end;gap:40px;margin-bottom:55px}.display-title{font-size:clamp(3.5rem,7vw,7rem);line-height:.86;letter-spacing:-.07em;margin:17px 0 0}.display-title em{font-weight:450;color:transparent;-webkit-text-stroke:1px rgba(244,242,237,.45)}.section-note{max-width:520px;justify-self:end;color:var(--muted);font-size:.96rem;line-height:1.75}.project-stack{display:grid;gap:26px}.project-card{height:min(76vh,760px);min-height:610px;position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:#0b0b0e;transform-style:preserve-3d;box-shadow:0 26px 90px rgba(0,0,0,.32)}.project-copy{position:absolute;left:34px;top:32px;width:min(44%,560px);z-index:6}.project-topline{display:grid;grid-template-columns:45px 1fr auto;gap:16px;color:#9d9ca4;font-size:.62rem;letter-spacing:.14em}.project-copy h3{font-size:clamp(3rem,6vw,6.4rem);line-height:.8;letter-spacing:-.07em;margin:35px 0 20px}.project-copy p{color:#b0afb6;line-height:1.65;max-width:490px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}.tags span{font-size:.63rem;border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:7px 9px;color:#aaa9b0;background:rgba(255,255,255,.03)}.project-scene{position:absolute;inset:0}.project-purple{background:radial-gradient(circle at 75% 45%,rgba(123,83,255,.35),transparent 31%),linear-gradient(135deg,#101016,#0a090d)}.floating-window{position:absolute;width:51%;height:51%;right:5%;top:25%;border:1px solid rgba(255,255,255,.13);background:#0c0c11;border-radius:18px;overflow:hidden;transform:perspective(1000px) rotateY(-12deg) rotateX(6deg) rotateZ(1deg);box-shadow:0 35px 90px rgba(0,0,0,.5)}.browser-chrome{height:35px;border-bottom:1px solid #23232b;display:flex;align-items:center;gap:6px;padding:0 12px;font-size:.55rem;color:#5d5b65}.browser-chrome i{width:6px;height:6px;border-radius:50%;background:#34333b}.browser-chrome b{margin-left:10px;font-weight:500}.fury-screen{height:calc(100% - 35px);display:flex;flex-direction:column;justify-content:center;padding-left:11%;background:radial-gradient(circle at 72% 30%,rgba(139,92,246,.28),transparent 24%),#0a0a0f}.fury-screen span,.fury-screen strong{font-size:clamp(2rem,5vw,5.4rem);line-height:.74;letter-spacing:-.06em}.fury-screen span{color:#7c63ff}.fury-screen small{margin-top:18px;color:#6d6b75;font-size:.55rem;letter-spacing:.2em}.floating-card{position:absolute;border:1px solid rgba(255,255,255,.12);background:rgba(13,13,18,.7);backdrop-filter:blur(18px);border-radius:14px;padding:15px 17px;display:grid;gap:5px;box-shadow:0 25px 60px rgba(0,0,0,.32)}.floating-card b{font-size:.66rem}.floating-card span{font-size:.55rem;color:#7c7985}.card-a{right:47%;bottom:10%;transform:rotate(-4deg)}.card-b{right:7%;top:13%;transform:rotate(5deg)}.scene-ring{position:absolute;border:1px solid rgba(139,92,246,.22);border-radius:50%;right:8%;top:9%;width:36%;aspect-ratio:1}.ring-two{width:50%;right:-2%;top:2%}.project-blue{background:radial-gradient(circle at 78% 30%,rgba(53,158,255,.28),transparent 28%),linear-gradient(150deg,#0b0d12,#08090b)}.code-panel{position:absolute;right:7%;top:20%;width:51%;height:60%;border:1px solid #23262e;border-radius:18px;background:#080a0e;transform:perspective(1000px) rotateY(-10deg) rotateX(6deg);overflow:hidden;box-shadow:0 35px 100px rgba(0,0,0,.5)}.code-title{height:38px;border-bottom:1px solid #1e2128;display:flex;align-items:center;gap:6px;padding:0 12px;color:#686d79;font-size:.56rem}.code-title i{width:6px;height:6px;background:#31353e;border-radius:50%}.code-title span{margin-left:9px}.code-panel pre{font-family:ui-monospace,Consolas,monospace;font-size:clamp(.56rem,1vw,.78rem);line-height:1.7;color:#a9b0bd;padding:24px}.code-panel pre b,.code-panel pre em{color:#69e6a3;font-style:normal}.code-panel pre span{color:#82c9ff}.code-panel pre small{color:#5e6570}.pipe-disc{position:absolute;border-radius:50%;background:linear-gradient(145deg,#1f5fff,#39d1ff);filter:blur(.2px);box-shadow:0 0 60px rgba(52,164,255,.25)}.disc-a{width:130px;height:130px;right:4%;bottom:4%}.disc-b{width:55px;height:55px;right:52%;top:12%}.project-cyan{background:radial-gradient(circle at 75% 50%,rgba(57,237,219,.24),transparent 30%),linear-gradient(145deg,#0a1010,#080a0b)}.voxel{position:absolute;width:120px;height:120px;background:linear-gradient(145deg,#51e7d8,#164e58);box-shadow:inset -24px -24px 35px rgba(0,0,0,.28),0 30px 60px rgba(0,0,0,.32);transform:rotateX(58deg) rotateZ(45deg);border:1px solid rgba(255,255,255,.14)}.voxel-1{right:17%;top:17%;width:190px;height:190px}.voxel-2{right:8%;bottom:16%;width:105px;height:105px}.voxel-3{right:39%;bottom:14%;width:86px;height:86px}.voxel-4{right:32%;top:13%;width:58px;height:58px}.tycoon-holo{position:absolute;right:8%;bottom:7%;font-size:.55rem;color:#7a817f;display:grid;gap:6px;text-align:right}.tycoon-holo span{font-size:clamp(2.3rem,5vw,5rem);font-weight:950;line-height:.8;color:#effffb;letter-spacing:-.06em}.project-orange{background:radial-gradient(circle at 78% 45%,rgba(255,140,65,.28),transparent 29%),linear-gradient(145deg,#110d0b,#090909)}.network-core,.network-node{position:absolute;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:rgba(18,14,12,.8);box-shadow:0 20px 55px rgba(0,0,0,.32);z-index:2;font-weight:900}.network-core{right:25%;top:40%;width:110px;height:110px;background:radial-gradient(circle,#ffad72,#d65f26 58%,#2a130a);font-size:1.5rem}.network-node{width:64px;height:64px;font-size:.65rem;color:#d8cec9}.node-1{right:55%;top:19%}.node-2{right:7%;top:15%}.node-3{right:55%;bottom:12%}.node-4{right:6%;bottom:12%}.network-lines{position:absolute;right:1%;top:12%;width:60%;height:72%;z-index:1}.network-lines path{stroke:rgba(255,170,107,.45);stroke-width:1.2;fill:none;stroke-dasharray:6 8;animation:dash 9s linear infinite}@keyframes dash{to{stroke-dashoffset:-120}}
-.web-lab{background:#ebe7df;color:#111114;border-radius:44px 44px 0 0}.web-lab .section-kicker,.web-lab .section-note{color:#65636a}.web-lab .display-title em{color:transparent;-webkit-text-stroke:1px rgba(17,17,20,.45)}.web-lab-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:26px;align-items:stretch}.web-lab-copy{padding:30px 10px 25px 0}.lab-index{font-size:.65rem;letter-spacing:.15em;color:#77747d}.web-lab-copy h3{font-size:clamp(2.2rem,4.6vw,4.4rem);line-height:.94;letter-spacing:-.06em;margin:28px 0 20px}.web-lab-copy p{color:#67656b;line-height:1.7}.web-lab-copy ul{list-style:none;padding:0;margin:35px 0;display:grid}.web-lab-copy li{display:flex;gap:20px;padding:12px 0;border-top:1px solid rgba(17,17,20,.14);font-size:.82rem}.web-lab-copy li span{color:#9a97a0}.button.inverted{background:#121215;color:#f2efe9;border:0}.web-demo{min-height:650px;border-radius:28px;background:#0a0a0d;color:white;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(20,20,25,.18);transform-style:preserve-3d}.demo-chrome{height:46px;border-bottom:1px solid rgba(255,255,255,.09);display:flex;align-items:center;justify-content:space-between;padding:0 17px;font-size:.56rem;letter-spacing:.12em;color:#75747e}.demo-chrome b{color:#8eeeb4}.demo-layout{position:absolute;inset:46px 0 0;padding:25px 28px;background:radial-gradient(circle at 68% 49%,rgba(116,86,255,.26),transparent 20%),linear-gradient(145deg,#101015,#070708);overflow:hidden}.demo-nav,.demo-footer{display:flex;justify-content:space-between;font-size:.55rem;letter-spacing:.16em;color:#777681}.demo-headline{position:absolute;left:6%;top:21%;font-size:clamp(4.6rem,8vw,9rem);line-height:.72;letter-spacing:-.08em;font-weight:950;z-index:2}.demo-headline i{font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.47)}.demo-orb-wrap{position:absolute;right:-5%;top:17%;width:48%;aspect-ratio:1;display:grid;place-items:center}.demo-orb{width:66%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 34% 29%,#fff,transparent 5%),radial-gradient(circle at 38% 33%,#d9caff,#8060ff 30%,#1c143d 63%,#050506 70%);box-shadow:0 0 90px rgba(126,91,255,.4);animation:float 5s ease-in-out infinite}.demo-orbit{position:absolute;width:100%;height:44%;border:1px solid rgba(255,255,255,.23);border-radius:50%;transform:rotate(-17deg)}.demo-footer{position:absolute;left:28px;right:28px;bottom:24px}@keyframes float{50%{transform:translateY(-15px) rotate(3deg)}}
-.service-list{border-top:1px solid var(--line);margin-top:40px}.service-row{display:grid;grid-template-columns:70px 1fr 1fr 34px;align-items:center;gap:25px;padding:31px 0;border-bottom:1px solid var(--line);transition:.3s var(--ease)}.service-row:hover{padding-left:12px;background:linear-gradient(90deg,rgba(255,255,255,.025),transparent)}.service-num{font-size:.65rem;color:#66656c}.service-row h3{font-size:clamp(1.45rem,2.8vw,2.5rem);letter-spacing:-.04em;margin:0}.service-row p{color:var(--muted);font-size:.84rem;line-height:1.6;margin:0;max-width:460px}.service-row b{font-size:1.25rem}.statement{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}.statement-grid{display:grid;grid-template-columns:120px 1fr 120px;gap:35px;align-items:center}.statement-side{font-size:.55rem;letter-spacing:.18em;color:#66656d;line-height:1.8}.statement-side.right{text-align:right}.statement-copy{font-size:clamp(2.6rem,5.6vw,6rem);line-height:.98;letter-spacing:-.055em;text-align:center;margin:0}.statement-copy em{font-style:normal;color:var(--purple)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.about-sticky{position:sticky;top:120px;height:max-content}.process-list{border-top:1px solid var(--line)}.process-list article{display:grid;grid-template-columns:60px 1fr;gap:20px;padding:31px 0;border-bottom:1px solid var(--line)}.process-list article>span{font-size:.64rem;color:#66656d}.process-list h3{font-size:2rem;letter-spacing:-.04em;margin:0 0 8px}.process-list p{margin:0;color:var(--muted);line-height:1.6}.terminal-card{border:1px solid var(--line);border-radius:26px;overflow:hidden;background:#090a0d;box-shadow:0 28px 90px rgba(0,0,0,.34)}.terminal-bar{height:48px;border-bottom:1px solid #1e1f25;display:flex;align-items:center;gap:7px;padding:0 16px;color:#5d616b;font-size:.62rem}.terminal-bar i{width:7px;height:7px;border-radius:50%;background:#343640}.terminal-bar span{margin-left:10px}.terminal-body{padding:28px;font-family:ui-monospace,Consolas,monospace;line-height:2;color:#a6abb6;font-size:clamp(.7rem,1.4vw,.9rem);min-height:320px}.terminal-body b{color:#ad8cff;font-weight:500}.prompt{color:#68e6a2}.terminal-status{margin-top:25px;color:#646a75}.terminal-status span{color:#62cfff}.caret{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
-.contact-section{position:relative;overflow:hidden;padding:145px 0 110px;border-top:1px solid var(--line);background:#09090b}.contact-inner{position:relative;z-index:2}.contact-inner h2{font-size:clamp(4rem,9vw,10rem);line-height:.78;letter-spacing:-.08em;margin:26px 0 40px;max-width:1200px}.contact-inner h2 em{font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(244,242,237,.45)}.contact-inner p{max-width:620px;color:#9e9da5;line-height:1.7}.contact-actions{display:grid;grid-template-columns:1fr 1fr;margin-top:70px;border-top:1px solid var(--line)}.huge-link{display:flex;align-items:center;justify-content:space-between;padding:28px 0;border-bottom:1px solid var(--line);font-size:clamp(1.5rem,3vw,3rem);letter-spacing:-.04em}.huge-link:first-child{padding-right:30px;border-right:1px solid var(--line)}.huge-link:last-child{padding-left:30px}.contact-blob{position:absolute;border-radius:50%;filter:blur(10px);opacity:.45}.blob-a{width:520px;height:520px;background:radial-gradient(circle,#6d4cff,transparent 65%);right:-120px;top:-80px}.blob-b{width:420px;height:420px;background:radial-gradient(circle,#1ab5dd,transparent 68%);left:-130px;bottom:-130px}.footer{padding:28px 0 40px;display:flex;justify-content:space-between;gap:30px;color:#74737b;font-size:.68rem}.footer>div{display:flex;gap:20px}.footer b{color:#c0bec5}.footer a{color:#bdbbc2}
-@media(max-width:1000px){.hero-grid,.section-top,.web-lab-grid,.about-grid{grid-template-columns:1fr}.hero-stage{height:600px}.section-note{justify-self:start}.project-card{min-height:860px}.project-copy{width:calc(100% - 68px)}.project-scene{top:350px}.web-lab-copy{padding-right:0}.about-sticky{position:static}.statement-grid{grid-template-columns:1fr}.statement-side{display:none}.service-row{grid-template-columns:50px 1fr 32px}.service-row p{grid-column:2}.service-row b{grid-column:3;grid-row:1/3}.nav-links{display:none}}
-@media(max-width:700px){.shell{width:min(calc(100% - 24px),var(--shell))}.cursor{display:none}.availability{display:none}.nav{height:66px}.hero{padding-top:100px}.hero-title{font-size:clamp(4rem,19vw,7rem)}.hero-stage{height:470px;min-height:0}.hero-meta{grid-template-columns:1fr 1fr}.hero-meta>div:nth-child(2){border-right:0}.hero-meta>div:nth-child(3),.hero-meta>div:nth-child(4){border-top:1px solid var(--line)}.section{padding:92px 0}.project-card{min-height:860px}.project-copy{left:22px;top:23px;width:calc(100% - 44px)}.project-copy h3{font-size:3.4rem;margin-top:26px}.project-scene{top:430px}.floating-window,.code-panel{width:84%;right:5%}.card-a{right:48%;bottom:9%}.card-b{right:5%;top:13%}.voxel-1{right:9%}.network-lines{width:95%;right:-10%}.network-core{right:35%}.node-1,.node-3{right:70%}.demo-headline{font-size:15vw}.demo-orb-wrap{width:68%;right:-17%}.web-demo{min-height:530px}.service-row{grid-template-columns:38px 1fr 24px;gap:12px;padding:23px 0}.contact-actions{grid-template-columns:1fr}.huge-link:first-child{border-right:0;padding-right:0}.huge-link:last-child{padding-left:0}.footer{flex-direction:column}.footer>div{justify-content:space-between}.marquee-track{animation-duration:25s}}
-@media(pointer:coarse){.cursor{display:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.preloader{display:none}.marquee-track,.demo-orb,.network-lines path,.caret{animation:none!important}.cursor{display:none}.project-card,.web-demo{transform:none!important}}
+    :root{
+      --bg:#07080b; --bg2:#0b0d12; --surface:#10131a; --surface2:#141823;
+      --text:#f4f6fb; --muted:#9ba3b4; --soft:#c9cfdb; --line:rgba(255,255,255,.10);
+      --line2:rgba(255,255,255,.16); --violet:#9b87ff; --cyan:#6fe7ff; --green:#7ef0b7; --amber:#ffc978;
+      --shell:1240px; --radius:28px; --radius-sm:18px; --shadow:0 24px 80px rgba(0,0,0,.38);
+      --ease:cubic-bezier(.2,.8,.2,1); --mx:50%; --my:20%;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--bg)}
+    body{margin:0;background:
+      radial-gradient(900px 560px at var(--mx) var(--my),rgba(155,135,255,.12),transparent 62%),
+      radial-gradient(780px 520px at 8% 18%,rgba(111,231,255,.07),transparent 65%),var(--bg);
+      color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.55;overflow-x:hidden;min-height:100vh}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+    ::selection{background:rgba(155,135,255,.35);color:#fff}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;color:inherit}
+    img,svg{display:block;max-width:100%}
+    .shell{width:min(calc(100% - 40px),var(--shell));margin-inline:auto}
+    .skip{position:fixed;left:16px;top:12px;z-index:1000;padding:12px 16px;border-radius:12px;background:#fff;color:#07080b;transform:translateY(-160%);transition:.2s}
+    .skip:focus{transform:none}
+    :focus-visible{outline:3px solid var(--cyan);outline-offset:4px}
+    .progress{position:fixed;left:0;top:0;height:2px;width:0;background:linear-gradient(90deg,var(--violet),var(--cyan));z-index:999}
 
-  
-/* V5 — portfolio depth, accessibility and case-study layer */
-:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}.skip-link{position:fixed;left:16px;top:12px;z-index:100000;padding:10px 14px;border-radius:999px;background:#fff;color:#050506;font-size:.75rem;font-weight:900;transform:translateY(-160%);transition:.2s}.skip-link:focus{transform:none}.nav-links a.active{color:#fff}.nav-links a.active:after{right:0}.hero-intro strong{color:#f0eef3;font-weight:700}.hero-signal{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.hero-signal span{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#c4c2ca;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.025)}
-.project-copy{display:flex;flex-direction:column}.project-case{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:22px;max-width:540px}.project-case div{padding:11px 12px;border:1px solid rgba(255,255,255,.1);border-radius:13px;background:rgba(5,5,7,.26);backdrop-filter:blur(9px)}.project-case span{display:block;font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;color:#73727a;margin-bottom:5px}.project-case b{font-size:.68rem;line-height:1.35;color:#e6e3ea}.project-actions{display:flex;gap:8px;align-items:center;margin-top:15px}.project-link,.project-status{min-height:34px;display:inline-flex;align-items:center;gap:14px;border-radius:999px;padding:0 12px;font-size:.6rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.045)}.project-link:hover{background:#f5f3ef;color:#09090b}.project-status{color:#85838b}.project-status i{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 12px rgba(110,242,166,.5)}
-.expertise-section{padding-top:15px}.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:45px}.expertise-card{position:relative;min-height:275px;padding:26px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012));overflow:hidden;transition:transform .35s var(--ease),border-color .35s}.expertise-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.24)}.expertise-card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;top:-80px;background:radial-gradient(circle,rgba(138,100,255,.22),transparent 68%);pointer-events:none}.expertise-card:nth-child(2):before,.expertise-card:nth-child(5):before{background:radial-gradient(circle,rgba(87,199,255,.2),transparent 68%)}.expertise-card:nth-child(3):before,.expertise-card:nth-child(6):before{background:radial-gradient(circle,rgba(101,240,231,.16),transparent 68%)}.expertise-index{font-size:.58rem;letter-spacing:.14em;color:#696871}.expertise-card h3{font-size:1.35rem;margin:48px 0 12px;letter-spacing:-.035em}.expertise-card p{font-size:.85rem;line-height:1.65;color:#929198;margin:0}.expertise-stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}.expertise-stack span{font-size:.58rem;color:#aaa8b0;border:1px solid rgba(255,255,255,.1);padding:6px 8px;border-radius:999px}
-.credibility-strip{border-block:1px solid var(--line);background:rgba(255,255,255,.015)}.credibility-grid{display:grid;grid-template-columns:repeat(4,1fr)}.credibility-grid div{padding:25px 24px;border-right:1px solid var(--line)}.credibility-grid div:last-child{border-right:0}.credibility-grid span{display:block;font-size:.56rem;color:#686770;letter-spacing:.13em;text-transform:uppercase;margin-bottom:8px}.credibility-grid b{font-size:.78rem;color:#d7d4dc;line-height:1.4}.contact-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:34px 0 4px;max-width:760px}.contact-meta div{padding:16px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025)}.contact-meta span{display:block;color:#6f6e76;font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}.contact-meta b{font-size:.78rem}.footer a:hover{color:#fff}
-@media(max-width:1000px){.expertise-grid{grid-template-columns:repeat(2,1fr)}.credibility-grid{grid-template-columns:repeat(2,1fr)}.credibility-grid div:nth-child(2){border-right:0}.credibility-grid div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
-@media(max-width:700px){.project-case{grid-template-columns:1fr 1fr}.project-case div:last-child{grid-column:1/-1}.expertise-grid{grid-template-columns:1fr}.expertise-card{min-height:auto}.credibility-grid{grid-template-columns:1fr}.credibility-grid div{border-right:0!important;border-bottom:1px solid var(--line)}.credibility-grid div:last-child{border-bottom:0}.contact-meta{grid-template-columns:1fr}.hero-signal{display:none}}
+    .topbar{position:sticky;top:0;z-index:100;padding:16px 0;background:linear-gradient(180deg,rgba(7,8,11,.88),rgba(7,8,11,.60),transparent);backdrop-filter:blur(18px)}
+    .nav{min-height:64px;border:1px solid var(--line);background:rgba(12,14,20,.72);border-radius:20px;padding:10px 12px 10px 14px;display:flex;align-items:center;gap:22px;box-shadow:0 12px 40px rgba(0,0,0,.16)}
+    .brand{display:flex;align-items:center;gap:12px;min-width:220px}
+    .brandmark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#f5f6fa;color:#08090d;font-weight:900;letter-spacing:-.05em}
+    .brandcopy{display:grid;line-height:1.1}.brandcopy strong{font-size:.92rem}.brandcopy span{font-size:.70rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.11em}
+    .navlinks{margin:auto;display:flex;gap:6px;padding:4px;border:1px solid rgba(255,255,255,.06);border-radius:14px;background:rgba(255,255,255,.025)}
+    .navlinks a{min-height:38px;display:flex;align-items:center;padding:0 13px;border-radius:10px;color:#aab1c0;font-size:.84rem;transition:.2s var(--ease)}
+    .navlinks a:hover,.navlinks a.active{color:#fff;background:rgba(255,255,255,.07)}
+    .navright{display:flex;align-items:center;gap:10px}
+    .status{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--soft);white-space:nowrap}
+    .status i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(126,240,183,.08),0 0 16px rgba(126,240,183,.45)}
+    .iconbtn{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:12px;transition:.2s}
+    .iconbtn:hover{background:rgba(255,255,255,.09);transform:translateY(-1px)}
 
+    .hero{padding:88px 0 72px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr);gap:60px;align-items:center;min-height:720px}
+    .eyebrow{display:flex;align-items:center;gap:10px;color:#c3c9d6;font:700 .72rem/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.16em;margin-bottom:26px}
+    .eyebrow::before{content:"";width:34px;height:1px;background:linear-gradient(90deg,var(--violet),var(--cyan))}
+    .hero h1{margin:0;font-size:clamp(3.7rem,8vw,7.8rem);line-height:.88;letter-spacing:-.075em;max-width:980px;font-weight:850}
+    .hero h1 .accent{display:block;background:linear-gradient(120deg,#fff 0%,#cfd5e3 45%,#8c96ab 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero h1 .outline{display:block;color:transparent;-webkit-text-stroke:1px rgba(244,246,251,.42);text-stroke:1px rgba(244,246,251,.42)}
+    .heroIntro{max-width:780px;margin:30px 0 0;color:#b8bfcd;font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.75}
+    .heroIntro strong{color:#fff;font-weight:650}
+    .heroMeta{margin:26px 0 0;display:flex;flex-wrap:wrap;gap:9px}
+    .chip{border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:999px;padding:9px 12px;color:#cbd1dd;font-size:.78rem;display:flex;align-items:center;gap:7px}
+    .chip b{color:#fff;font-weight:650}
+    .heroActions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+    .btn{min-height:50px;padding:0 18px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line);font-weight:700;font-size:.88rem;transition:.24s var(--ease);cursor:pointer}
+    .btn.primary{background:#f4f6fb;color:#08090d;border-color:#f4f6fb}.btn.primary:hover{transform:translateY(-2px);box-shadow:0 15px 40px rgba(255,255,255,.12)}
+    .btn.ghost{background:rgba(255,255,255,.035)}.btn.ghost:hover{background:rgba(255,255,255,.08);transform:translateY(-2px)}
+    .heroFoot{margin-top:34px;display:flex;gap:28px;flex-wrap:wrap;color:var(--muted);font-size:.77rem;text-transform:uppercase;letter-spacing:.09em}
+    .heroFoot span b{color:#fff;margin-right:6px}
 
-/* ===== V5 — Portfolio product layer ===== */
-:root{--card:#0c0c10;--card2:#101017;--soft:rgba(255,255,255,.055)}
-.project-link.quiet{color:#777680;border-color:rgba(255,255,255,.08)}
-.project-link.quiet:hover{color:#fff;border-color:rgba(255,255,255,.22)}
-.proof-section{position:relative}
-.proof-section:before{content:"";position:absolute;left:50%;top:6%;width:min(900px,90vw);height:520px;transform:translateX(-50%);background:radial-gradient(circle,rgba(87,199,255,.07),transparent 68%);pointer-events:none}
-.case-grid{display:grid;gap:18px;position:relative}
-.case-card{border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.012));padding:28px;overflow:hidden;position:relative;transition:transform .35s var(--ease),border-color .35s,background .35s}
-.case-card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.22);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015))}
-.case-featured{background:radial-gradient(circle at 88% 16%,rgba(138,100,255,.14),transparent 32%),linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.012))}
-.case-head{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;padding-bottom:20px;border-bottom:1px solid var(--line)}
-.case-head span{font-size:.62rem;letter-spacing:.14em;color:#777680}.case-head b{font-size:.92rem}.case-head em{font-style:normal;font-size:.56rem;letter-spacing:.12em;color:#9e9ca6;border:1px solid var(--line);border-radius:999px;padding:6px 8px}
-.case-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:36px;padding:30px 0 12px}
-.case-summary h3{font-size:clamp(1.9rem,3.2vw,3.6rem);line-height:1;letter-spacing:-.045em;margin:0 0 18px}.case-summary p{color:var(--muted);line-height:1.7;margin:0;max-width:600px}
-.case-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.case-columns>div{border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:18px;background:rgba(0,0,0,.12)}.case-columns span{font-size:.57rem;letter-spacing:.13em;text-transform:uppercase;color:#6e6d75}.case-columns p{font-size:.78rem;line-height:1.6;color:#b6b4bc;margin:10px 0 0}
-.case-cta{display:inline-flex;align-items:center;gap:28px;margin-top:14px;border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:5px;font-size:.74rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.case-cta b{transition:transform .25s}.case-cta:hover b{transform:translate(3px,-3px)}
-.stack-board{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#0b0b0e,#09090c)}
-.stack-column{padding:26px 22px;display:flex;flex-direction:column;gap:11px;border-right:1px solid var(--line);min-height:270px}.stack-column:last-child{border-right:0}.stack-column span{font-size:.57rem;letter-spacing:.14em;color:#696871;margin-bottom:10px}.stack-column b{font-size:.82rem;font-weight:650;color:#d4d2d9;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.055)}.stack-column b:last-child{border-bottom:0}
-.stack-note{margin-top:14px;border:1px solid var(--line);border-radius:18px;padding:20px 22px;display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:start;background:rgba(255,255,255,.018)}.stack-note span{font-size:.57rem;letter-spacing:.14em;color:#696871}.stack-note p{margin:0;color:#aaa8b0;line-height:1.65;font-size:.84rem;max-width:900px}
-.hero-copy{position:relative}.hero-copy:after{content:"V5 / 2026";position:absolute;left:-38px;top:50%;transform:rotate(-90deg) translateX(-50%);transform-origin:left top;font-size:.5rem;letter-spacing:.22em;color:#44434b}
-.contact-inner{position:relative}.contact-inner:after{content:"MB";position:absolute;right:0;bottom:-28px;font-size:clamp(8rem,23vw,21rem);font-weight:950;line-height:.72;letter-spacing:-.12em;color:rgba(255,255,255,.022);pointer-events:none;z-index:0}.contact-inner>*{position:relative;z-index:1}
-@media(max-width:1100px){.case-layout{grid-template-columns:1fr}.stack-board{grid-template-columns:repeat(2,1fr)}.stack-column{border-bottom:1px solid var(--line)}.stack-column:nth-child(2n){border-right:0}.stack-column:last-child{grid-column:1/-1;border-bottom:0}.hero-copy:after{display:none}}
-@media(max-width:760px){.case-card{padding:20px;border-radius:22px}.case-head{grid-template-columns:1fr auto}.case-head span{grid-column:1/-1}.case-layout{gap:22px;padding-top:24px}.case-columns{grid-template-columns:1fr}.stack-board{grid-template-columns:1fr}.stack-column,.stack-column:nth-child(2n){border-right:0;border-bottom:1px solid var(--line);min-height:auto}.stack-column:last-child{grid-column:auto}.stack-note{grid-template-columns:1fr}.case-summary h3{font-size:2.15rem}.contact-inner:after{display:none}}
-@media(prefers-reduced-motion:reduce){.case-card:hover{transform:none}}
+    .systemVisual{position:relative;min-height:520px;border:1px solid var(--line);border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.012));overflow:hidden;box-shadow:var(--shadow);isolation:isolate}
+    .systemVisual::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),transparent 85%)}
+    .systemVisual::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;left:50%;top:46%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(155,135,255,.20),rgba(111,231,255,.08) 42%,transparent 72%);filter:blur(12px);z-index:-1}
+    .visualTop{position:absolute;left:22px;right:22px;top:20px;display:flex;justify-content:space-between;align-items:center;font:600 .68rem ui-monospace,SFMono-Regular,Menlo,monospace;color:#949cad;text-transform:uppercase;letter-spacing:.11em}
+    .visualTop span:last-child{color:var(--green)}
+    .orbit{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);border:1px solid rgba(255,255,255,.10);border-radius:50%}
+    .orbit.o1{width:340px;height:340px;animation:spin 24s linear infinite}.orbit.o2{width:250px;height:250px;animation:spinReverse 18s linear infinite}.orbit.o3{width:160px;height:160px}
+    .orbit::before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--cyan);top:-5px;left:50%;box-shadow:0 0 22px var(--cyan)}
+    .o2::before{background:var(--violet);box-shadow:0 0 22px var(--violet)}
+    .core{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:112px;height:112px;border-radius:30px;border:1px solid rgba(255,255,255,.18);background:linear-gradient(145deg,#1c2130,#0e1118);display:grid;place-items:center;box-shadow:inset 0 1px rgba(255,255,255,.08),0 25px 60px rgba(0,0,0,.32)}
+    .core strong{font-size:1.5rem;letter-spacing:-.06em}.core span{display:block;font:600 .58rem ui-monospace,monospace;color:var(--muted);letter-spacing:.14em;text-align:center;margin-top:3px}
+    .node{position:absolute;padding:11px 13px;border-radius:13px;border:1px solid var(--line);background:rgba(13,16,23,.80);backdrop-filter:blur(8px);font-size:.74rem;color:#dbe0e9;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+    .node b{font:700 .59rem ui-monospace,monospace;color:var(--muted);display:block;letter-spacing:.1em;margin-bottom:3px}.n1{left:28px;top:108px}.n2{right:28px;top:144px}.n3{left:36px;bottom:112px}.n4{right:34px;bottom:82px}
+    .visualLegend{position:absolute;left:22px;right:22px;bottom:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+    .visualLegend div{padding:11px 8px;border-top:1px solid var(--line);font-size:.66rem;color:#929aaa;text-transform:uppercase;letter-spacing:.08em}.visualLegend b{display:block;color:#fff;font-size:.75rem;margin-bottom:2px;letter-spacing:0;text-transform:none}
 
-</style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mathis Boy","jobTitle":"Full-Stack Developer & Product Builder","url":"https://github.com/LegendeUrbaine","sameAs":["https://github.com/LegendeUrbaine","https://www.furycraft.fr"],"knowsAbout":["Full-stack development","Web development","Product engineering","Artificial intelligence automation","Minecraft server engineering","Backend systems","Infrastructure","UI/UX"]}</script>
+    .tickerWrap{border-block:1px solid var(--line);overflow:hidden;background:rgba(255,255,255,.015)}
+    .ticker{display:flex;width:max-content;animation:ticker 26s linear infinite;padding:14px 0}
+    .ticker span{display:flex;align-items:center;gap:12px;margin-right:36px;font:650 .72rem ui-monospace,monospace;color:#9ea6b6;letter-spacing:.09em;text-transform:uppercase}.ticker span::before{content:"✦";color:var(--violet)}
+
+    .section{padding:118px 0}
+    .sectionHead{display:grid;grid-template-columns:1fr minmax(280px,440px);gap:40px;align-items:end;margin-bottom:48px}
+    .kicker{font:700 .68rem ui-monospace,monospace;color:#8f98aa;text-transform:uppercase;letter-spacing:.16em;margin-bottom:14px}
+    .sectionHead h2{font-size:clamp(2.6rem,5.2vw,5.4rem);line-height:.96;letter-spacing:-.055em;margin:0;max-width:850px}.sectionHead h2 em{font-style:normal;color:#8d96a8}
+    .sectionHead p{margin:0;color:var(--muted);font-size:1rem;line-height:1.75}
+
+    .workGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+    .project{position:relative;min-height:470px;border:1px solid var(--line);border-radius:28px;overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(255,255,255,.012));padding:28px;display:flex;flex-direction:column;transition:.32s var(--ease);isolation:isolate}
+    .project:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.20);box-shadow:0 28px 70px rgba(0,0,0,.25)}
+    .project.small{min-height:360px}.project.wide{grid-column:1/-1;min-height:390px}
+    .project::before{content:"";position:absolute;inset:0;background:radial-gradient(440px 220px at 80% 10%,rgba(155,135,255,.15),transparent 72%);z-index:-1}
+    .project[data-tone="cyan"]::before{background:radial-gradient(440px 220px at 80% 10%,rgba(111,231,255,.13),transparent 72%)}
+    .project[data-tone="amber"]::before{background:radial-gradient(440px 220px at 80% 10%,rgba(255,201,120,.10),transparent 72%)}
+    .pTop{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.num{font:700 .68rem ui-monospace,monospace;color:#818a9e;letter-spacing:.14em}.live{font:650 .68rem ui-monospace,monospace;color:var(--green);display:flex;align-items:center;gap:7px}.live::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+    .pBody{margin-top:auto;position:relative;z-index:2}.pType{font:700 .66rem ui-monospace,monospace;color:#929bae;text-transform:uppercase;letter-spacing:.14em}.project h3{font-size:clamp(2rem,3.3vw,3.7rem);letter-spacing:-.055em;line-height:1;margin:10px 0 14px}.project p{color:#aeb6c5;max-width:680px;margin:0 0 18px}.tags{display:flex;flex-wrap:wrap;gap:7px}.tags span{font-size:.68rem;color:#c3cad7;border:1px solid var(--line);border-radius:999px;padding:7px 9px;background:rgba(255,255,255,.025)}
+    .pLink{position:absolute;right:24px;bottom:24px;width:48px;height:48px;border-radius:15px;display:grid;place-items:center;border:1px solid var(--line2);background:rgba(255,255,255,.05);font-size:1.15rem;transition:.25s}.project:hover .pLink{background:#fff;color:#08090d;transform:rotate(-8deg)}
+    .mock{position:absolute;right:28px;top:88px;width:46%;height:48%;border:1px solid rgba(255,255,255,.10);border-radius:20px;background:#0d1017;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.35)}
+    .mock::before{content:"";display:block;height:30px;border-bottom:1px solid rgba(255,255,255,.07);background:linear-gradient(90deg,#171b25,#10131a)}
+    .mock::after{content:"";position:absolute;inset:48px 18px 18px;background:linear-gradient(135deg,rgba(155,135,255,.18),transparent 55%),linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:auto,100% 34px;border-radius:13px}
+    .wide .mock{width:38%;height:64%;top:70px}
+
+    .caseGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .case{border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.025);padding:30px;min-height:520px;display:flex;flex-direction:column}
+    .caseIndex{font:700 .65rem ui-monospace,monospace;color:#8b94a6;letter-spacing:.15em;text-transform:uppercase}.case h3{font-size:clamp(2rem,3vw,3.4rem);line-height:1.03;letter-spacing:-.05em;margin:14px 0 15px}.case>p{color:#aab2c2;margin:0 0 26px;max-width:640px}.caseRows{display:grid;gap:0;margin-top:auto}.caseRow{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)}.caseRow b{font:700 .65rem ui-monospace,monospace;color:#8d96a8;text-transform:uppercase;letter-spacing:.11em}.caseRow span{color:#d4d9e2;font-size:.91rem}.caseActions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+
+    .capGrid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.cap{border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.025);padding:26px;min-height:270px;position:relative;overflow:hidden}.cap:nth-child(1){grid-column:span 7}.cap:nth-child(2){grid-column:span 5}.cap:nth-child(3){grid-column:span 5}.cap:nth-child(4){grid-column:span 7}.capNo{font:700 .64rem ui-monospace,monospace;color:#7f899d;letter-spacing:.15em}.cap h3{font-size:1.6rem;letter-spacing:-.035em;margin:48px 0 10px}.cap p{margin:0;color:#9fa8b8;max-width:560px}.capList{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}.capList span{font-size:.68rem;padding:7px 9px;border-radius:999px;background:rgba(255,255,255,.045);color:#cbd1dc}.capGlow{position:absolute;width:180px;height:180px;border-radius:50%;right:-50px;top:-50px;background:radial-gradient(circle,rgba(155,135,255,.16),transparent 70%)}
+
+    .process{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:28px;overflow:hidden}.step{padding:28px;min-height:270px;background:rgba(255,255,255,.02);border-right:1px solid var(--line);display:flex;flex-direction:column}.step:last-child{border-right:0}.stepNo{font:700 .65rem ui-monospace,monospace;color:#8992a4}.step h3{font-size:1.45rem;letter-spacing:-.03em;margin:auto 0 10px}.step p{margin:0;color:#9fa7b7;font-size:.88rem;line-height:1.65}
+
+    .aboutGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}.aboutCard{border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.025);padding:32px;min-height:460px}.aboutCard.statementCard{display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,rgba(155,135,255,.08),rgba(255,255,255,.02))}.statementCard .quote{font-size:clamp(2rem,3.6vw,4rem);line-height:1.02;letter-spacing:-.055em;margin:0;max-width:620px}.statementCard .quote em{font-style:normal;color:#919aab}.miniMeta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}.miniMeta span{font:650 .66rem ui-monospace,monospace;color:#aab1bf;text-transform:uppercase;letter-spacing:.09em;border-top:1px solid var(--line);padding-top:10px;min-width:120px}.bio{color:#b4bccb;font-size:1rem;line-height:1.8;margin:0}.bio strong{color:#fff}.timeline{margin-top:30px}.timelineRow{display:grid;grid-template-columns:100px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--line)}.timelineRow b{font:700 .63rem ui-monospace,monospace;color:#8992a4;letter-spacing:.1em}.timelineRow span{color:#d4d9e2}.timelineRow small{display:block;color:#8f98a8;margin-top:4px}
+
+    .contact{padding:110px 0 90px}.contactCard{border:1px solid var(--line);border-radius:34px;background:linear-gradient(135deg,rgba(155,135,255,.10),rgba(111,231,255,.04) 45%,rgba(255,255,255,.02));padding:clamp(30px,6vw,74px);position:relative;overflow:hidden}.contactCard::after{content:"";position:absolute;width:440px;height:440px;border-radius:50%;right:-180px;top:-190px;background:radial-gradient(circle,rgba(111,231,255,.14),transparent 70%)}.contactCard h2{font-size:clamp(3rem,6.7vw,7rem);line-height:.92;letter-spacing:-.065em;margin:0;max-width:1000px}.contactCard h2 em{font-style:normal;color:#929bad}.contactCard p{color:#b2bac9;max-width:680px;font-size:1rem;line-height:1.8;margin:24px 0 0}.contactActions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;position:relative;z-index:2}.contactNote{margin-top:28px;color:#80899b;font:650 .67rem ui-monospace,monospace;text-transform:uppercase;letter-spacing:.10em}
+
+    footer{padding:24px 0 42px}.footerRow{padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#858ea0;font-size:.78rem}.footerRow b{color:#cdd3dd}.footerLinks{display:flex;gap:16px}.footerLinks a:hover{color:#fff}
+
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}.reveal.in{opacity:1;transform:none}
+    @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+    @keyframes spinReverse{to{transform:translate(-50%,-50%) rotate(-360deg)}}
+    @keyframes ticker{to{transform:translateX(-50%)}}
+
+    @media(max-width:1050px){
+      .navlinks{display:none}.brand{min-width:0}.nav{justify-content:space-between}.hero{grid-template-columns:1fr;padding-top:58px;min-height:0}.systemVisual{min-height:460px}.workGrid{grid-template-columns:1fr}.project.wide{grid-column:auto}.caseGrid{grid-template-columns:1fr}.cap:nth-child(n){grid-column:span 6}.process{grid-template-columns:repeat(2,1fr)}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}.aboutGrid{grid-template-columns:1fr}
+    }
+    @media(max-width:720px){
+      .shell{width:min(calc(100% - 24px),var(--shell))}.topbar{padding:10px 0}.nav{border-radius:16px}.brandcopy span,.status{display:none}.hero{padding:46px 0 52px;gap:34px}.hero h1{font-size:clamp(3.4rem,17vw,5rem)}.heroIntro{font-size:.98rem}.heroFoot{gap:14px}.systemVisual{min-height:420px;border-radius:24px}.orbit.o1{width:280px;height:280px}.orbit.o2{width:210px;height:210px}.visualLegend{grid-template-columns:repeat(2,1fr)}.visualLegend div:nth-child(-n+2){display:none}.node{font-size:.67rem}.n1{left:16px;top:92px}.n2{right:16px;top:124px}.n3{left:18px;bottom:100px}.n4{right:18px;bottom:78px}.section{padding:82px 0}.sectionHead{grid-template-columns:1fr;gap:18px;margin-bottom:30px}.project,.project.small,.project.wide{min-height:460px;padding:22px}.mock,.wide .mock{width:72%;height:34%;top:78px;right:18px}.pLink{right:20px;bottom:20px}.case{padding:22px;min-height:0}.caseRow{grid-template-columns:1fr;gap:6px}.capGrid{grid-template-columns:1fr}.cap:nth-child(n){grid-column:auto;min-height:220px}.cap h3{margin-top:34px}.process{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)!important;min-height:210px}.step:last-child{border-bottom:0!important}.aboutCard{padding:24px;min-height:0}.timelineRow{grid-template-columns:1fr;gap:6px}.contact{padding-top:76px}.contactCard{border-radius:26px}.footerRow{flex-direction:column}.footerLinks{flex-wrap:wrap}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Aller au contenu</a>
-  <div class="preloader" id="preloader" aria-hidden="true">
-    <div class="preloader-mark">MB</div>
-    <div class="preloader-line"><span></span></div>
-    <div class="preloader-copy">CREATIVE DEVELOPMENT / 2026</div>
-  </div>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
-  <div class="noise" aria-hidden="true"></div>
-  <div class="cursor" id="cursor" aria-hidden="true"><span>VIEW</span></div>
-  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-  <header class="topbar" id="topbar">
+  <header class="topbar">
     <div class="shell nav">
-      <a href="#top" class="brand magnetic" data-magnetic aria-label="Retour en haut">
-        <span class="brand-glyph">MB</span>
-        <span class="brand-copy"><b>Mathis Boy</b><small>Full-Stack / Product</small></span>
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="brandmark">MB</span>
+        <span class="brandcopy"><strong>Mathis Boy</strong><span>Full‑Stack / Product / AI</span></span>
       </a>
-
-      <nav class="nav-links" aria-label="Navigation principale">
-        <a href="#work">Work</a>
-        <a href="#proof">Case Studies</a>
-        <a href="#stack">Stack</a>
-        <a href="#about">Approach</a>
+      <nav class="navlinks" aria-label="Navigation principale">
+        <a href="#work">Projets</a><a href="#cases">Case studies</a><a href="#expertise">Expertise</a><a href="#about">À propos</a>
       </nav>
-
-      <div class="nav-right">
-        <span class="availability"><i></i> Available</span>
-        <a href="#contact" class="round-link magnetic" data-magnetic aria-label="Contact">↗</a>
-      </div>
+      <div class="navright"><span class="status"><i></i>Disponible pour projets</span><a class="iconbtn" href="https://github.com/LegendeUrbaine" target="_blank" rel="noopener noreferrer" aria-label="GitHub">↗</a></div>
     </div>
   </header>
 
-  <main id="main"><div id="top"></div>
-    <section class="hero shell">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow split-reveal">DEVELOPER / DESIGN / PRODUCT / SYSTEMS</div>
-          <h1 class="hero-title" aria-label="Build beyond standard">
-            <span class="hero-line line-a">BUILD</span>
-            <span class="hero-line line-b">BEYOND</span>
-            <span class="hero-line line-c">STANDARD.</span>
-          </h1>
-          <p class="hero-intro split-reveal">
-            Je conçois et développe des <strong>produits numériques complets</strong> : interfaces web,
-            logiciels, automatisation par IA, systèmes temps réel, expériences Minecraft et infrastructure — de l'architecture à la mise en production.
-          </p>
-          <div class="hero-signal split-reveal" aria-label="Positionnement professionnel">
-            <span>Full-Stack</span><span>Product Engineering</span><span>AI Automation</span><span>France / Remote</span>
-          </div>
-          <div class="hero-actions split-reveal">
-            <a class="button primary magnetic" data-magnetic href="#work"><span>Voir les projets</span><b>↘</b></a>
-            <a class="button ghost magnetic" data-magnetic href="#proof"><span>Voir les case studies</span><b>→</b></a>
-          </div>
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div>
+        <div class="eyebrow">Mathis Boy / LégendeUrbaine — France</div>
+        <h1><span class="accent">I build digital</span><span class="outline">systems.</span></h1>
+        <p class="heroIntro"><strong>Full‑Stack Developer & Product Builder.</strong> Je conçois des produits numériques complets — web, automatisation IA, infrastructure et systèmes Minecraft — avec une approche centrée sur l’architecture, l’expérience et la qualité de livraison.</p>
+        <div class="heroMeta">
+          <span class="chip"><b>01</b> Product Engineering</span><span class="chip"><b>02</b> AI & Automation</span><span class="chip"><b>03</b> Web / UI</span><span class="chip"><b>04</b> Infrastructure</span>
         </div>
-
-        <div class="hero-stage" id="heroStage">
-          <canvas id="heroCanvas" aria-hidden="true"></canvas>
-          <div class="stage-hud top-left"><span>INTERACTIVE OBJECT</span><b>01</b></div>
-          <div class="stage-hud top-right"><span>MOVE POINTER</span><b>↗</b></div>
-          <div class="stage-hud bottom-left"><span>WEBGL / CSS / MOTION</span></div>
-          <div class="stage-hud bottom-right"><span id="fpsLabel">REALTIME</span></div>
-          <div class="stage-fallback" aria-hidden="true">
-            <div class="orb"></div>
-            <div class="orbit orbit-a"></div>
-            <div class="orbit orbit-b"></div>
-          </div>
-        </div>
+        <div class="heroActions"><a class="btn primary" href="#work">Voir les projets <span>↓</span></a><a class="btn ghost" href="https://github.com/LegendeUrbaine" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div>
+        <div class="heroFoot"><span><b>2026</b> Portfolio</span><span><b>Remote</b> France</span><span><b>Open‑source</b> & product work</span></div>
       </div>
-
-      <div class="hero-meta">
-        <div><span>01</span><b>Web & Product</b><small>Sites premium & interfaces</small></div>
-        <div><span>02</span><b>AI & Automation</b><small>Workflows, agents & tooling</small></div>
-        <div><span>03</span><b>Minecraft Engineering</b><small>Paper, Velocity, Java 21</small></div>
-        <div><span>04</span><b>Infrastructure</b><small>Linux, CI/CD, services</small></div>
+      <div class="systemVisual" aria-label="Visualisation abstraite d'un système produit">
+        <div class="visualTop"><span>System architecture / live map</span><span>● online</span></div>
+        <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+        <div class="core"><div><strong>MB</strong><span>BUILD / SHIP</span></div></div>
+        <div class="node n1"><b>01 / PRODUCT</b>Scope & roadmap</div><div class="node n2"><b>02 / BUILD</b>Full‑stack systems</div><div class="node n3"><b>03 / VERIFY</b>QA & evidence</div><div class="node n4"><b>04 / OPERATE</b>Infra & delivery</div>
+        <div class="visualLegend"><div><b>Product</b>Architecture</div><div><b>Interface</b>UX / motion</div><div><b>Backend</b>APIs / logic</div><div><b>Infra</b>Deploy / observe</div></div>
       </div>
     </section>
 
-    <section class="marquee-section" aria-label="Technologies">
-      <div class="marquee-track">
-        <span>JAVA 21</span><i>✦</i><span>PAPER</span><i>✦</i><span>VELOCITY</span><i>✦</i><span>WEB DESIGN</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>NODE.JS</span><i>✦</i><span>AI / AUTOMATION</span><i>✦</i><span>APIs</span><i>✦</i><span>UI / UX</span><i>✦</i><span>LINUX</span><i>✦</i><span>CI / CD</span><i>✦</i><span>CREATIVE DEVELOPMENT</span><i>✦</i>
-        <span>JAVA 21</span><i>✦</i><span>PAPER</span><i>✦</i><span>VELOCITY</span><i>✦</i><span>WEB DESIGN</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>NODE.JS</span><i>✦</i><span>AI / AUTOMATION</span><i>✦</i><span>APIs</span><i>✦</i><span>UI / UX</span><i>✦</i><span>LINUX</span><i>✦</i><span>CI / CD</span><i>✦</i><span>CREATIVE DEVELOPMENT</span><i>✦</i>
+    <div class="tickerWrap" aria-hidden="true"><div class="ticker">
+      <span>Java 21</span><span>Paper</span><span>Velocity</span><span>JavaScript</span><span>Node.js</span><span>AI Automation</span><span>Linux</span><span>CI/CD</span><span>UI/UX</span><span>Product Systems</span>
+      <span>Java 21</span><span>Paper</span><span>Velocity</span><span>JavaScript</span><span>Node.js</span><span>AI Automation</span><span>Linux</span><span>CI/CD</span><span>UI/UX</span><span>Product Systems</span>
+    </div></div>
+
+    <section class="section shell" id="work">
+      <div class="sectionHead reveal"><div><div class="kicker">01 / Selected work</div><h2>Quelques projets.<br><em>Pas une liste infinie.</em></h2></div><p>Les meilleurs portfolios montrent peu de projets, mais assez de contexte pour comprendre le rôle, les décisions et la qualité d’exécution. Voici les systèmes les plus représentatifs de mon travail.</p></div>
+      <div class="workGrid">
+        <article class="project reveal" data-tone="violet"><div class="pTop"><span class="num">01 / PLATFORM</span><span class="live">LIVE</span></div><div class="mock" aria-hidden="true"></div><div class="pBody"><div class="pType">Founder / Product / Engineering</div><h3>FuryCraft</h3><p>Écosystème Minecraft multi‑serveurs : progression, économie, interfaces, plugins propriétaires, services et infrastructure coordonnés comme un produit unique.</p><div class="tags"><span>Java 21</span><span>Paper 1.21.8</span><span>Velocity</span><span>Gradle</span><span>Product UX</span></div></div><a class="pLink" href="https://www.furycraft.fr" target="_blank" rel="noopener noreferrer" aria-label="Voir FuryCraft">↗</a></article>
+        <article class="project small reveal" data-tone="cyan"><div class="pTop"><span class="num">02 / OPEN SOURCE</span><span class="live">PUBLIC</span></div><div class="pBody"><div class="pType">AI tooling / orchestration</div><h3>FuryPipe</h3><p>Plateforme d’orchestration pour workflows assistés par IA avec gouvernance, validation, evidence‑first delivery et automatisation contrôlée.</p><div class="tags"><span>TypeScript</span><span>Agents</span><span>CI</span><span>Governance</span></div></div><a class="pLink" href="https://github.com/LegendeUrbaine/FuryPipe" target="_blank" rel="noopener noreferrer" aria-label="Voir FuryPipe sur GitHub">↗</a></article>
+        <article class="project wide reveal" data-tone="amber"><div class="pTop"><span class="num">03 / CREATIVE DEVELOPMENT</span><span class="num">WEB / UI / SYSTEMS</span></div><div class="mock" aria-hidden="true"></div><div class="pBody"><div class="pType">Design engineering</div><h3>Web & Product Lab</h3><p>Sites vitrines, portfolios, landing pages et interfaces produit avec direction artistique, responsive, accessibilité, SEO technique, micro‑interactions et intégrations.</p><div class="tags"><span>HTML / CSS / JS</span><span>Responsive</span><span>SEO</span><span>Accessibility</span><span>Motion</span></div></div><a class="pLink" href="#expertise" aria-label="Voir les expertises web">↓</a></article>
       </div>
     </section>
 
-    <section id="work" class="section shell">
-      <div class="section-top">
-        <div>
-          <div class="section-kicker">01 / SELECTED WORK</div>
-          <h2 class="display-title">Selected<br><em>systems.</em></h2>
-        </div>
-        <p class="section-note">Des projets pensés comme des produits : architecture, design, performances, expérience utilisateur et exploitation.</p>
-      </div>
-
-      <div class="project-stack">
-        <article class="project-card project-purple cursor-view" data-tilt>
-          <div class="project-copy">
-            <div class="project-topline"><span>01</span><span>PLATFORM / MINECRAFT</span><span>2026</span></div>
-            <h3>FuryCraft</h3>
-            <p>Écosystème Minecraft multi-serveurs avec plugins propriétaires, progression, économie, UI, services et infrastructure dédiée.</p>
-            <div class="tags"><span>Paper 1.21.8</span><span>Velocity</span><span>Java 21</span><span>Gradle</span><span>UI/UX</span></div>
-            <div class="project-case"><div><span>Scope</span><b>Plateforme multi-serveurs</b></div><div><span>Focus</span><b>Gameplay + produit</b></div><div><span>Rôle</span><b>Conception & développement</b></div></div>
-            <div class="project-actions"><a class="project-link" href="https://www.furycraft.fr" target="_blank" rel="noopener noreferrer">Voir le projet ↗</a><a class="project-link quiet" href="#case-furycraft">Case study ↓</a><span class="project-status"><i></i> Actif</span></div>
-          </div>
-          <div class="project-scene scene-fury">
-            <div class="floating-window window-main">
-              <div class="browser-chrome"><i></i><i></i><i></i><b>play.furycraft.fr</b></div>
-              <div class="fury-screen"><span>FURY</span><strong>CRAFT</strong><small>PLAY / PROGRESS / EVOLVE</small></div>
-            </div>
-            <div class="floating-card card-a"><b>OPRISON</b><span>Mines / Prestiges</span></div>
-            <div class="floating-card card-b"><b>FURY SYSTEMS</b><span>Custom ecosystem</span></div>
-            <div class="scene-ring ring-one"></div><div class="scene-ring ring-two"></div>
-          </div>
-        </article>
-
-        <article class="project-card project-blue cursor-view" data-tilt>
-          <div class="project-copy">
-            <div class="project-topline"><span>02</span><span>DEVELOPER TOOLING</span><span>2026</span></div>
-            <h3>FuryPipe</h3>
-            <p>Tooling de développement orienté automatisation, gouvernance, sécurité, evidence-first et validation reproductible.</p>
-            <div class="tags"><span>Automation</span><span>GitHub</span><span>CI/CD</span><span>Security</span><span>DX</span></div>
-            <div class="project-case"><div><span>Scope</span><b>Tooling développeur</b></div><div><span>Focus</span><b>Gouvernance & qualité</b></div><div><span>Rôle</span><b>Architecture produit</b></div></div>
-            <div class="project-actions"><a class="project-link" href="https://github.com/LegendeUrbaine/FuryPipe" target="_blank" rel="noopener noreferrer">Code public ↗</a><a class="project-link quiet" href="#case-furypipe">Case study ↓</a><span class="project-status"><i></i> En évolution</span></div>
-          </div>
-          <div class="project-scene scene-pipe">
-            <div class="code-panel">
-              <div class="code-title"><i></i><i></i><i></i><span>furypipe — production gate</span></div>
-              <pre><b>$</b> furypipe verify --production
-
-<span>◆</span> governance ........ <em>PASS</em>
-<span>◆</span> exact-head CI ..... <em>PASS</em>
-<span>◆</span> security gates .... <em>PASS</em>
-<span>◆</span> evidence package .. <em>READY</em>
-
-<small>controlled review enabled</small></pre>
-            </div>
-            <div class="pipe-disc disc-a"></div><div class="pipe-disc disc-b"></div>
-          </div>
-        </article>
-
-        <article class="project-card project-cyan cursor-view" data-tilt>
-          <div class="project-copy">
-            <div class="project-topline"><span>03</span><span>GAME SYSTEM DESIGN</span><span>2026</span></div>
-            <h3>FuryTycoon</h3>
-            <p>Expérience Tycoon moderne : gameplay, world design, progression, modèles 3D, VFX, interfaces et plugins sur mesure.</p>
-            <div class="tags"><span>Game Design</span><span>3D</span><span>VFX</span><span>World Design</span><span>Java</span></div>
-            <div class="project-case"><div><span>Scope</span><b>Expérience Tycoon</b></div><div><span>Focus</span><b>Progression & immersion</b></div><div><span>Rôle</span><b>Game systems & direction</b></div></div>
-            <div class="project-actions"><a class="project-link quiet" href="#case-furytycoon">Case study ↓</a><span class="project-status"><i></i> En développement</span></div>
-          </div>
-          <div class="project-scene scene-tycoon">
-            <div class="voxel voxel-1"></div><div class="voxel voxel-2"></div><div class="voxel voxel-3"></div><div class="voxel voxel-4"></div>
-            <div class="tycoon-holo"><span>TYCOON</span><b>BUILD / SCALE / AUTOMATE</b></div>
-          </div>
-        </article>
-
-        <article class="project-card project-orange cursor-view" data-tilt>
-          <div class="project-copy">
-            <div class="project-topline"><span>04</span><span>BACKEND / INFRA</span><span>2026</span></div>
-            <h3>FurySrv</h3>
-            <p>Architecture temps réel entre serveurs, agents et panel web avec WebSocket, authentification, logs et contrôle centralisé.</p>
-            <div class="tags"><span>Node.js</span><span>WebSocket</span><span>Agents</span><span>Observability</span><span>Backend</span></div>
-            <div class="project-case"><div><span>Scope</span><b>Contrôle temps réel</b></div><div><span>Focus</span><b>Protocoles & observabilité</b></div><div><span>Rôle</span><b>Backend & architecture</b></div></div>
-            <div class="project-actions"><a class="project-link quiet" href="#case-furysrv">Case study ↓</a><span class="project-status"><i></i> En développement</span></div>
-          </div>
-          <div class="project-scene scene-srv">
-            <div class="network-core">FS</div>
-            <div class="network-node node-1">V</div><div class="network-node node-2">H</div><div class="network-node node-3">P</div><div class="network-node node-4">WEB</div>
-            <svg class="network-lines" viewBox="0 0 600 320" preserveAspectRatio="none"><path d="M300,160 L95,80 M300,160 L505,70 M300,160 L100,250 M300,160 L505,250" /></svg>
-          </div>
-        </article>
+    <section class="section shell" id="cases">
+      <div class="sectionHead reveal"><div><div class="kicker">02 / Case studies</div><h2>Problem → decision<br><em>→ delivery.</em></h2></div><p>Un projet ne se résume pas à une capture. Je montre le problème, les choix d’architecture et ce qui est réellement livré — sans métriques inventées.</p></div>
+      <div class="caseGrid">
+        <article class="case reveal"><span class="caseIndex">Case 01 / FuryCraft</span><h3>Faire évoluer un écosystème sans perdre sa cohérence.</h3><p>Plusieurs couches de gameplay et d’infrastructure doivent évoluer ensemble : une modification isolée peut casser l’expérience, l’économie ou les opérations.</p><div class="caseRows"><div class="caseRow"><b>Challenge</b><span>Unifier progression, économie, UI, services et multi‑serveur sans créer un empilement fragile.</span></div><div class="caseRow"><b>Décision</b><span>Responsabilités séparées, composants propriétaires, conventions communes et logique produit centralisée.</span></div><div class="caseRow"><b>Delivery</b><span>Direction produit, développement Java, intégration Paper/Velocity, UI/UX, documentation et exploitation.</span></div></div><div class="caseActions"><a class="btn ghost" href="https://www.furycraft.fr" target="_blank" rel="noopener noreferrer">Voir FuryCraft ↗</a></div></article>
+        <article class="case reveal"><span class="caseIndex">Case 02 / FuryPipe</span><h3>Automatiser sans transformer l’IA en boîte noire.</h3><p>L’automatisation accélère le travail, mais devient risquée si les décisions, validations et preuves disparaissent derrière un agent opaque.</p><div class="caseRows"><div class="caseRow"><b>Challenge</b><span>Conserver vitesse et autonomie tout en gardant contrôle, reproductibilité et auditabilité.</span></div><div class="caseRow"><b>Décision</b><span>Gates explicites, validation exact‑head, evidence packages, politiques de sécurité et workflows GitHub.</span></div><div class="caseRow"><b>Delivery</b><span>Architecture produit, hardening progressif, CI, contrôles et dépôt public en évolution.</span></div></div><div class="caseActions"><a class="btn ghost" href="https://github.com/LegendeUrbaine/FuryPipe" target="_blank" rel="noopener noreferrer">Voir le dépôt ↗</a></div></article>
       </div>
     </section>
 
-
-    <section id="proof" class="section shell proof-section">
-      <div class="section-top">
-        <div>
-          <div class="section-kicker">02 / CASE STUDIES</div>
-          <h2 class="display-title">Not just what.<br><em>Why & how.</em></h2>
-        </div>
-        <p class="section-note">Une sélection de décisions produit et techniques. Pas de métriques inventées : uniquement du contexte, des choix d'architecture et des livrables réels ou explicitement en cours.</p>
-      </div>
-
-      <div class="case-grid">
-        <article class="case-card case-featured" id="case-furycraft">
-          <div class="case-head"><span>01 / PLATFORM</span><b>FuryCraft</b><em>LIVE</em></div>
-          <div class="case-layout">
-            <div class="case-summary"><h3>Construire un écosystème, pas un empilement de plugins.</h3><p>Le projet combine progression, économie, UI, services et infrastructure dans une plateforme Minecraft multi-serveurs cohérente.</p></div>
-            <div class="case-columns">
-              <div><span>Challenge</span><p>Faire évoluer plusieurs systèmes de gameplay sans casser l'expérience globale ni multiplier les dépendances fragiles.</p></div>
-              <div><span>Architecture</span><p>Java 21, Paper, Velocity, composants propriétaires, responsabilités séparées et logique produit commune.</p></div>
-              <div><span>Delivery</span><p>Direction produit, développement, intégration serveur, UI/UX, documentation et exploitation.</p></div>
-            </div>
-          </div>
-          <a href="https://www.furycraft.fr" target="_blank" rel="noopener noreferrer" class="case-cta">Explorer FuryCraft <b>↗</b></a>
-        </article>
-
-        <article class="case-card" id="case-furypipe">
-          <div class="case-head"><span>02 / TOOLING</span><b>FuryPipe</b><em>PUBLIC</em></div>
-          <div class="case-layout">
-            <div class="case-summary"><h3>Rendre le développement assisté par IA contrôlable et vérifiable.</h3><p>FuryPipe structure des workflows où l'automatisation doit rester gouvernée, reproductible et auditable.</p></div>
-            <div class="case-columns">
-              <div><span>Challenge</span><p>Éviter qu'une automatisation rapide devienne une boîte noire impossible à valider.</p></div>
-              <div><span>Architecture</span><p>Gates, validation exact-head, evidence packages, contrôles de sécurité et workflows GitHub.</p></div>
-              <div><span>Delivery</span><p>Architecture produit, durcissement progressif, CI et dépôt public en évolution.</p></div>
-            </div>
-          </div>
-          <a href="https://github.com/LegendeUrbaine/FuryPipe" target="_blank" rel="noopener noreferrer" class="case-cta">Voir le dépôt public <b>↗</b></a>
-        </article>
-
-        <article class="case-card" id="case-furytycoon">
-          <div class="case-head"><span>03 / GAME SYSTEM</span><b>FuryTycoon</b><em>BUILDING</em></div>
-          <div class="case-layout">
-            <div class="case-summary"><h3>Traiter un mode Tycoon comme un produit de jeu complet.</h3><p>Progression, monde, feedback visuel, automatisation, UI et direction artistique sont conçus ensemble.</p></div>
-            <div class="case-columns">
-              <div><span>Challenge</span><p>Éviter une boucle de gameplay répétitive et donner une identité forte à la progression.</p></div>
-              <div><span>Architecture</span><p>Systèmes Java, modèles 3D, VFX, world design, UI et progression structurée par étapes.</p></div>
-              <div><span>Status</span><p>Conception et développement en cours ; les visualisations du portfolio restent conceptuelles quand aucune capture réelle n'existe.</p></div>
-            </div>
-          </div>
-        </article>
-
-        <article class="case-card" id="case-furysrv">
-          <div class="case-head"><span>04 / REALTIME</span><b>FurySrv</b><em>BUILDING</em></div>
-          <div class="case-layout">
-            <div class="case-summary"><h3>Centraliser le contrôle sans perdre l'observabilité.</h3><p>Une architecture de communication temps réel entre agents, serveurs et interface web.</p></div>
-            <div class="case-columns">
-              <div><span>Challenge</span><p>Synchroniser des services distincts avec authentification, état, logs et contrôle centralisé.</p></div>
-              <div><span>Architecture</span><p>Node.js / TypeScript, WebSocket, handshake contrôlé, registry d'agents et flux d'événements.</p></div>
-              <div><span>Status</span><p>Backend et protocole en développement, avec priorité à la robustesse et à l'exploitation.</p></div>
-            </div>
-          </div>
-        </article>
+    <section class="section shell" id="expertise">
+      <div class="sectionHead reveal"><div><div class="kicker">03 / Expertise</div><h2>Du cadrage<br><em>à la production.</em></h2></div><p>Je préfère comprendre le système complet plutôt que traiter chaque fonctionnalité comme un élément isolé.</p></div>
+      <div class="capGrid">
+        <article class="cap reveal"><span class="capNo">01 / PRODUCT</span><div class="capGlow"></div><h3>Product Engineering</h3><p>Cadrage, architecture, priorités, parcours, composants et décisions techniques alignés sur l’usage réel.</p><div class="capList"><span>Architecture</span><span>Roadmap</span><span>DX</span><span>QA</span></div></article>
+        <article class="cap reveal"><span class="capNo">02 / AI</span><div class="capGlow"></div><h3>AI & Automation</h3><p>Agents, workflows, outils contextuels et automatisations avec contrôle, validation et garde‑fous.</p><div class="capList"><span>Agents</span><span>APIs</span><span>Tooling</span><span>Workflows</span></div></article>
+        <article class="cap reveal"><span class="capNo">03 / WEB</span><div class="capGlow"></div><h3>Web & UI Systems</h3><p>Interfaces rapides, lisibles et responsives avec hiérarchie claire, motion maîtrisé et SEO technique.</p><div class="capList"><span>Frontend</span><span>Responsive</span><span>SEO</span><span>Accessibility</span></div></article>
+        <article class="cap reveal"><span class="capNo">04 / INFRA</span><div class="capGlow"></div><h3>Backend & Infrastructure</h3><p>Services, APIs, Linux, déploiement, observabilité, CI/CD et exploitation de systèmes temps réel.</p><div class="capList"><span>Node.js</span><span>Linux</span><span>CI/CD</span><span>Realtime</span><span>Minecraft servers</span></div></article>
       </div>
     </section>
 
-    <section id="web" class="web-lab section">
-      <div class="shell">
-        <div class="section-top inverse">
-          <div>
-            <div class="section-kicker">03 / WEB LAB</div>
-            <h2 class="display-title">Sites that<br><em>feel alive.</em></h2>
-          </div>
-          <p class="section-note">Design éditorial, interactions, responsive, SEO technique, performance et développement sur mesure.</p>
-        </div>
+    <section class="section shell" id="process">
+      <div class="sectionHead reveal"><div><div class="kicker">04 / Process</div><h2>Clair avant<br><em>d’être complexe.</em></h2></div><p>Une méthode courte : comprendre, architecturer, construire, puis vérifier. Les animations et le polish viennent après la clarté du produit.</p></div>
+      <div class="process reveal"><article class="step"><span class="stepNo">01</span><h3>Understand</h3><p>Objectifs, utilisateurs, contraintes, risques et critères de réussite.</p></article><article class="step"><span class="stepNo">02</span><h3>Architect</h3><p>Responsabilités, données, interactions, parcours et structure technique.</p></article><article class="step"><span class="stepNo">03</span><h3>Build</h3><p>Développement incrémental, composants cohérents et intégrations maîtrisées.</p></article><article class="step"><span class="stepNo">04</span><h3>Verify</h3><p>Tests, responsive, performance, accessibilité et contrôle des régressions.</p></article></div>
+    </section>
 
-        <div class="web-lab-grid">
-          <div class="web-lab-copy">
-            <span class="lab-index">WEB / 01</span>
-            <h3>Création de sites web premium.</h3>
-            <p>Portfolio, landing page, site vitrine ou interface métier : chaque projet reçoit une identité visuelle propre et une base technique conçue pour évoluer.</p>
-            <ul>
-              <li><span>01</span> Direction artistique & UI system</li>
-              <li><span>02</span> Motion design & micro-interactions</li>
-              <li><span>03</span> Responsive mobile-first</li>
-              <li><span>04</span> SEO technique & sémantique</li>
-              <li><span>05</span> Performance & accessibilité</li>
-              <li><span>06</span> APIs, formulaires & intégrations</li>
-            </ul>
-            <a class="button inverted magnetic" data-magnetic href="#contact"><span>Démarrer un projet web</span><b>↗</b></a>
-          </div>
-
-          <div class="web-demo cursor-view" data-tilt>
-            <div class="demo-chrome"><span>EXPERIMENT / 2026</span><b>● LIVE</b></div>
-            <div class="demo-layout">
-              <div class="demo-nav"><strong>M/01</strong><span>WORK ABOUT LAB CONTACT</span></div>
-              <div class="demo-headline">MAKE<br>THE WEB<br><i>MOVE.</i></div>
-              <div class="demo-orb-wrap"><div class="demo-orb"></div><div class="demo-orbit"></div></div>
-              <div class="demo-footer"><span>CREATIVE DEVELOPMENT</span><span>SCROLL ↓</span></div>
-            </div>
-          </div>
-        </div>
+    <section class="section shell" id="about">
+      <div class="sectionHead reveal"><div><div class="kicker">05 / About</div><h2>Engineering mindset.<br><em>Product taste.</em></h2></div><p>Mon parcours technique mélange terrain, systèmes numériques et développement. Cette combinaison me pousse à penser fiabilité, exploitation et expérience utilisateur ensemble.</p></div>
+      <div class="aboutGrid">
+        <article class="aboutCard statementCard reveal"><p class="quote">Je construis des produits qui doivent être <em>compréhensibles, maintenables et agréables à utiliser.</em></p><div class="miniMeta"><span>France</span><span>Remote</span><span>2026</span><span>Founder / Builder</span></div></article>
+        <article class="aboutCard reveal"><p class="bio"><strong>Mathis Boy</strong>, également connu sous le pseudo <strong>LégendeUrbaine</strong>. Je travaille sur des produits web, des outils assistés par IA, des systèmes backend, des environnements Minecraft et leur infrastructure. Mon background technique en maintenance et électricité renforce une approche orientée diagnostic, fiabilité et systèmes complets.</p><div class="timeline"><div class="timelineRow"><b>NOW</b><span>Full‑Stack / Product / AI<small>Produits numériques, automatisation, infrastructure et systèmes interactifs.</small></span></div><div class="timelineRow"><b>FOUNDER</b><span>FuryCraft<small>Direction produit, développement et exploitation d’un écosystème Minecraft.</small></span></div><div class="timelineRow"><b>BACKGROUND</b><span>Maintenance & électricité<small>Approche terrain, diagnostic, installations techniques et fiabilité.</small></span></div></div></article>
       </div>
     </section>
 
-    <section id="services" class="section shell">
-      <div class="section-kicker">04 / CAPABILITIES</div>
-      <div class="service-list">
-        <article class="service-row">
-          <span class="service-num">01</span><h3>Web Design & Development</h3><p>Sites vitrines, portfolios, landing pages, UI responsive, SEO et intégrations.</p><b>↗</b>
-        </article>
-        <article class="service-row">
-          <span class="service-num">02</span><h3>Software & Backend</h3><p>Services, APIs, outils internes, automatisations et architectures événementielles.</p><b>↗</b>
-        </article>
-        <article class="service-row">
-          <span class="service-num">03</span><h3>Minecraft Engineering</h3><p>Plugins Paper/Velocity, systèmes de progression, interfaces et infrastructure serveur.</p><b>↗</b>
-        </article>
-        <article class="service-row">
-          <span class="service-num">04</span><h3>UI / UX & Motion</h3><p>Hiérarchie, systèmes visuels, interactions, prototypes et expériences orientées usage.</p><b>↗</b>
-        </article>
-        <article class="service-row">
-          <span class="service-num">05</span><h3>Infrastructure & Quality</h3><p>Linux, bases de données, CI/CD, tests, observabilité et validation reproductible.</p><b>↗</b>
-        </article>
-      </div>
-    </section>
-
-    <section id="expertise" class="section shell expertise-section">
-      <div class="section-top">
-        <div>
-          <div class="section-kicker">05 / EXPERTISE</div>
-          <h2 class="display-title">From idea<br><em>to production.</em></h2>
-        </div>
-        <p class="section-note">Je travaille sur l’ensemble de la chaîne : cadrage, architecture, développement, interface, automatisation, déploiement et validation.</p>
-      </div>
-      <div class="expertise-grid">
-        <article class="expertise-card"><span class="expertise-index">01 / PRODUCT</span><h3>Product Engineering</h3><p>Transformer un besoin en architecture cohérente, puis en produit exploitable et maintenable.</p><div class="expertise-stack"><span>Architecture</span><span>Roadmap</span><span>DX</span><span>QA</span></div></article>
-        <article class="expertise-card"><span class="expertise-index">02 / AI</span><h3>AI & Automation</h3><p>Automatiser les tâches répétitives et construire des workflows assistés par IA avec contrôle, contexte et validation.</p><div class="expertise-stack"><span>Agents</span><span>Workflows</span><span>APIs</span><span>Tooling</span></div></article>
-        <article class="expertise-card"><span class="expertise-index">03 / GAME</span><h3>Minecraft Systems</h3><p>Concevoir des systèmes serveur complets : progression, économie, interfaces, services et expériences de jeu.</p><div class="expertise-stack"><span>Java 21</span><span>Paper</span><span>Velocity</span><span>Gradle</span></div></article>
-        <article class="expertise-card"><span class="expertise-index">04 / WEB</span><h3>Web & UI Engineering</h3><p>Créer des interfaces rapides, lisibles et distinctives, avec responsive, motion, SEO technique et accessibilité.</p><div class="expertise-stack"><span>HTML/CSS</span><span>JavaScript</span><span>UI/UX</span><span>Motion</span></div></article>
-        <article class="expertise-card"><span class="expertise-index">05 / BACKEND</span><h3>Backend & Infrastructure</h3><p>Services temps réel, APIs, WebSocket, Linux, déploiement, observabilité et exploitation.</p><div class="expertise-stack"><span>Node.js</span><span>WebSocket</span><span>Linux</span><span>CI/CD</span></div></article>
-        <article class="expertise-card"><span class="expertise-index">06 / QUALITY</span><h3>Production Discipline</h3><p>Tests, sécurité, performance et preuves reproductibles pour éviter les validations basées sur l’intuition.</p><div class="expertise-stack"><span>Testing</span><span>Security</span><span>Performance</span><span>Evidence</span></div></article>
-      </div>
-    </section>
-
-
-    <section id="stack" class="section shell stack-section">
-      <div class="section-top">
-        <div>
-          <div class="section-kicker">06 / TECH STACK</div>
-          <h2 class="display-title">Tools change.<br><em>Systems stay.</em></h2>
-        </div>
-        <p class="section-note">Je choisis les outils en fonction du produit à construire. Cette stack représente les technologies réellement utilisées ou intégrées dans mes projets.</p>
-      </div>
-      <div class="stack-board">
-        <div class="stack-column"><span>LANGUAGES</span><b>Java 21</b><b>JavaScript</b><b>TypeScript</b><b>HTML / CSS</b><b>Lua</b></div>
-        <div class="stack-column"><span>BACKEND</span><b>Node.js</b><b>WebSocket</b><b>REST APIs</b><b>Redis</b><b>Event-driven systems</b></div>
-        <div class="stack-column"><span>GAME / MC</span><b>Paper</b><b>Velocity</b><b>Gradle</b><b>Resource packs</b><b>Custom UI systems</b></div>
-        <div class="stack-column"><span>INFRA / DELIVERY</span><b>Linux</b><b>Docker</b><b>Nginx</b><b>GitHub Actions</b><b>CI / CD</b></div>
-        <div class="stack-column"><span>PRODUCT / WEB</span><b>UI / UX</b><b>Responsive</b><b>SEO</b><b>Accessibility</b><b>GSAP / WebGL</b></div>
-      </div>
-      <div class="stack-note"><span>PRINCIPLE</span><p>Je ne cherche pas à afficher le plus de technologies possible. Le but est de sélectionner une architecture compréhensible, testable et adaptée à l'usage réel.</p></div>
-    </section>
-
-    <section class="credibility-strip" aria-label="Principes de travail">
-      <div class="shell credibility-grid">
-        <div><span>Architecture</span><b>Structure avant accumulation de fonctionnalités</b></div>
-        <div><span>Qualité</span><b>Validation reproductible avant déclaration de réussite</b></div>
-        <div><span>Expérience</span><b>Mobile, accessibilité et performance intégrés dès le départ</b></div>
-        <div><span>Produit</span><b>Compréhensible, exploitable et conçu pour évoluer</b></div>
-      </div>
-    </section>
-
-    <section class="statement section">
-      <div class="shell statement-grid">
-        <span class="statement-side">DESIGN<br>ENGINEERING</span>
-        <p class="statement-copy">Je ne sépare pas <em>design</em> et <em>engineering</em>. Un produit fort doit être clair visuellement, cohérent techniquement et agréable à utiliser.</p>
-        <span class="statement-side right">PRODUCT<br>SYSTEMS</span>
-      </div>
-    </section>
-
-    <section id="about" class="section shell about-section">
-      <div class="about-grid">
-        <div class="about-sticky">
-          <div class="section-kicker">07 / APPROACH</div>
-          <h2 class="display-title">Build.<br><em>Validate.</em><br>Improve.</h2>
-        </div>
-        <div class="process-list">
-          <article><span>01</span><div><h3>Understand</h3><p>Objectifs, contexte, contraintes, cible et critères de réussite.</p></div></article>
-          <article><span>02</span><div><h3>Architect</h3><p>Structure produit, responsabilités techniques, parcours et priorités.</p></div></article>
-          <article><span>03</span><div><h3>Prototype</h3><p>Direction visuelle, interactions clés et validation rapide de l'expérience.</p></div></article>
-          <article><span>04</span><div><h3>Build</h3><p>Développement incrémental, composants réutilisables et intégrations.</p></div></article>
-          <article><span>05</span><div><h3>Verify</h3><p>Tests, responsive, performances, accessibilité et contrôle des régressions.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="terminal-section section shell">
-      <div class="terminal-card cursor-view">
-        <div class="terminal-bar"><i></i><i></i><i></i><span>mathis@portfolio — ~/principles</span></div>
-        <div class="terminal-body">
-          <div><span class="prompt">$</span> cat principles.txt</div>
-          <div><b>01</b> architecture_before_patchwork</div>
-          <div><b>02</b> evidence_before_claim</div>
-          <div><b>03</b> product_over_feature_count</div>
-          <div><b>04</b> mobile_is_not_an_afterthought</div>
-          <div><b>05</b> performance_is_part_of_ux</div>
-          <div><b>06</b> automate_repeatable_work</div>
-          <div class="terminal-status"><span>status</span> → continuously_improving<span class="caret">_</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="contact-blob blob-a"></div><div class="contact-blob blob-b"></div>
-      <div class="shell contact-inner">
-        <div class="section-kicker">08 / CONTACT</div>
-        <h2>Une idée à transformer<br><em>en produit concret.</em></h2>
-        <p>Web, logiciel, automatisation IA, système temps réel, expérience Minecraft ou infrastructure : je peux intervenir du cadrage à la production, avec une approche orientée architecture, expérience et validation.</p>
-        <div class="contact-meta"><div><span>Profil</span><b>Full-Stack · Product · Systems</b></div><div><span>Mode</span><b>France · Remote / collaboration</b></div><div><span>Domaines</span><b>Web · IA · Backend · Minecraft · Infra</b></div><div><span>Source publique</span><b>GitHub disponible pour les projets ouverts</b></div></div>
-        <div class="contact-actions">
-          <a class="huge-link magnetic" data-magnetic href="https://github.com/LegendeUrbaine" target="_blank" rel="noopener noreferrer"><span>GitHub</span><b>↗</b></a>
-          <a class="huge-link magnetic" data-magnetic href="https://www.furycraft.fr" target="_blank" rel="noopener noreferrer"><span>FuryCraft</span><b>↗</b></a>
-        </div>
-      </div>
+    <section class="contact shell" id="contact">
+      <div class="contactCard reveal"><div class="kicker">06 / Contact</div><h2>Build something<br><em>worth shipping.</em></h2><p>Projet web, produit logiciel, automatisation IA, système Minecraft ou infrastructure : le point de départ est toujours le même — comprendre le besoin avant de choisir les outils.</p><div class="contactActions"><a class="btn primary" href="https://github.com/LegendeUrbaine" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="btn ghost" href="https://www.furycraft.fr" target="_blank" rel="noopener noreferrer">FuryCraft ↗</a><button class="btn ghost" id="copyLink" type="button">Copier le portfolio</button></div><div class="contactNote">legendeurbaine.github.io / France / Remote</div></div>
     </section>
   </main>
 
-  <footer class="footer shell">
-    <div><b>Mathis Boy</b><span>Full-Stack Developer & Product Builder</span></div>
-    <div><span>France / 2026 · Portfolio V5</span><a href="#top">BACK TO TOP ↑</a></div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-
-<script>
-/* V5 native motion fallback: runs even if GSAP/CDN is unavailable. */
-(() => {
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduced) return;
-  const style = document.createElement('style');
-  style.textContent = `
-    .native-reveal{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
-    .native-reveal.native-visible{opacity:1;transform:none}
-  `;
-  document.head.appendChild(style);
-  const targets = [
-    ...document.querySelectorAll('.project-card,.service-row,.process-list article,.terminal-card,.web-demo,.expertise-card,.credibility-grid div,.case-card,.stack-column,.stack-note')
-  ];
-  targets.forEach(el => el.classList.add('native-reveal'));
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('native-visible');
-        io.unobserve(entry.target);
-      }
-    });
-  }, {threshold:.1, rootMargin:'0px 0px -4% 0px'});
-  targets.forEach(el => io.observe(el));
-})();
-</script>
+  <footer><div class="shell footerRow"><div><b>Mathis Boy</b> — Full‑Stack Developer & Product Builder</div><div class="footerLinks"><a href="#top">↑ Haut</a><a href="https://github.com/LegendeUrbaine" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.furycraft.fr" target="_blank" rel="noopener noreferrer">FuryCraft</a></div></div></footer>
 
   <script>
-const $ = (s, ctx=document) => ctx.querySelector(s);
-const $$ = (s, ctx=document) => [...ctx.querySelectorAll(s)];
-const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    (()=>{
+      const root=document.documentElement;
+      const progress=document.getElementById('progress');
+      const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(!reduced){
+        addEventListener('pointermove',e=>{root.style.setProperty('--mx',`${e.clientX}px`);root.style.setProperty('--my',`${e.clientY}px`)},{passive:true});
+      }
+      const onScroll=()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h>0?scrollY/h*100:0)+'%'};
+      addEventListener('scroll',onScroll,{passive:true});onScroll();
 
-window.addEventListener('load', () => {
-  setTimeout(() => $('#preloader')?.classList.add('hide'), reduceMotion ? 0 : 1050);
-});
+      const reveals=[...document.querySelectorAll('.reveal')];
+      if(reduced||!('IntersectionObserver'in window)){reveals.forEach(x=>x.classList.add('in'))}
+      else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6%'});reveals.forEach(x=>io.observe(x))}
 
-const topbar = $('#topbar');
-const progress = $('#scrollProgress');
-const onScroll = () => {
-  topbar?.classList.toggle('scrolled', scrollY > 24);
-  const max = document.documentElement.scrollHeight - innerHeight;
-  const pct = max > 0 ? (scrollY / max) * 100 : 0;
-  if (progress) progress.style.width = pct + '%';
-};
-addEventListener('scroll', onScroll, {passive:true}); onScroll();
+      const links=[...document.querySelectorAll('.navlinks a[href^="#"]')];
+      const map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+      const secs=[...map.keys()].map(id=>document.getElementById(id)).filter(Boolean);
+      if('IntersectionObserver'in window){const navio=new IntersectionObserver(es=>{const v=es.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(!v)return;links.forEach(a=>a.classList.remove('active'));map.get(v.target.id)?.classList.add('active')},{rootMargin:'-25% 0px -62% 0px',threshold:[0,.2,.5,.8]});secs.forEach(s=>navio.observe(s))}
 
-// Custom cursor + project intent
-const cursor = $('#cursor');
-if (cursor && matchMedia('(pointer:fine)').matches && !reduceMotion) {
-  let x=innerWidth/2,y=innerHeight/2,cx=x,cy=y;
-  addEventListener('pointermove', e => { x=e.clientX; y=e.clientY; }, {passive:true});
-  const loop = () => { cx += (x-cx)*.18; cy += (y-cy)*.18; cursor.style.transform=`translate(${cx}px,${cy}px) translate(-50%,-50%)`; requestAnimationFrame(loop);};
-  loop();
-  $$('.cursor-view').forEach(el => {
-    el.addEventListener('mouseenter',()=>cursor.classList.add('view'));
-    el.addEventListener('mouseleave',()=>cursor.classList.remove('view'));
-  });
-}
-
-// Magnetic interactions
-if (!reduceMotion && matchMedia('(pointer:fine)').matches) {
-  $$('[data-magnetic]').forEach(el => {
-    el.addEventListener('mousemove', e => {
-      const r=el.getBoundingClientRect(); const dx=e.clientX-(r.left+r.width/2); const dy=e.clientY-(r.top+r.height/2);
-      el.style.transform=`translate(${dx*.13}px,${dy*.13}px)`;
-    });
-    el.addEventListener('mouseleave',()=>el.style.transform='');
-  });
-
-  $$('[data-tilt]').forEach(el => {
-    el.addEventListener('mousemove', e => {
-      const r=el.getBoundingClientRect();
-      const px=(e.clientX-r.left)/r.width-.5; const py=(e.clientY-r.top)/r.height-.5;
-      el.style.transform=`perspective(1200px) rotateX(${py*-2.2}deg) rotateY(${px*2.6}deg)`;
-    });
-    el.addEventListener('mouseleave',()=>el.style.transform='');
-  });
-}
-
-// GSAP enhancements, with native fallback if CDN unavailable
-if (window.gsap && window.ScrollTrigger && !reduceMotion) {
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.from('.hero-line', {yPercent:110, opacity:0, duration:1.15, stagger:.09, ease:'power4.out', delay:1.05});
-  gsap.from('.split-reveal', {y:24, opacity:0, duration:.8, stagger:.12, ease:'power3.out', delay:1.35});
-  gsap.from('.hero-stage', {scale:.92, opacity:0, duration:1.2, ease:'power3.out', delay:1.2});
-
-  $$('.project-card').forEach(card => {
-    gsap.from(card, {scrollTrigger:{trigger:card,start:'top 88%'}, y:70, opacity:0, duration:1, ease:'power3.out'});
-    const scene=$('.project-scene', card);
-    if(scene) gsap.to(scene,{scrollTrigger:{trigger:card,start:'top bottom',end:'bottom top',scrub:1},y:-45,ease:'none'});
-  });
-  gsap.from('.web-lab-copy > *',{scrollTrigger:{trigger:'.web-lab',start:'top 72%'},y:30,opacity:0,stagger:.08,duration:.8,ease:'power3.out'});
-  gsap.from('.web-demo',{scrollTrigger:{trigger:'.web-lab',start:'top 75%'},scale:.92,rotate:1.5,opacity:0,duration:1.1,ease:'power3.out'});
-  gsap.to('.statement-copy',{scrollTrigger:{trigger:'.statement',start:'top bottom',end:'bottom top',scrub:1},xPercent:-3,ease:'none'});
-  $$('.process-list article').forEach((el,i)=>gsap.from(el,{scrollTrigger:{trigger:el,start:'top 90%'},x:30,opacity:0,duration:.7,delay:i*.03,ease:'power2.out'}));
-} else {
-  $$('.hero-line,.split-reveal,.project-card,.web-demo,.process-list article').forEach(el=>{el.style.opacity='1';el.style.transform='none';});
-}
-
-// Three.js hero. Graceful CSS fallback stays behind canvas when unavailable.
-(async () => {
-  if (reduceMotion) return;
-  const stage=$('#heroStage'), canvas=$('#heroCanvas'); if(!stage||!canvas) return;
-  try {
-    const THREE = await import('https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js');
-    const renderer = new THREE.WebGLRenderer({canvas,alpha:true,antialias:true,powerPreference:'high-performance'});
-    renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));
-    renderer.outputColorSpace = THREE.SRGBColorSpace;
-    const scene=new THREE.Scene();
-    const camera=new THREE.PerspectiveCamera(38,1,.1,100); camera.position.set(0,0,6.4);
-    const group=new THREE.Group(); scene.add(group);
-
-    const geo=new THREE.IcosahedronGeometry(1.45,5);
-    const mat=new THREE.MeshPhysicalMaterial({color:0x6f52ff,roughness:.18,metalness:.22,transmission:.35,thickness:1.6,clearcoat:1,clearcoatRoughness:.12,ior:1.35});
-    const mesh=new THREE.Mesh(geo,mat); group.add(mesh);
-
-    const wireGeo=new THREE.IcosahedronGeometry(1.63,2);
-    const wireMat=new THREE.MeshBasicMaterial({color:0xa28fff,wireframe:true,transparent:true,opacity:.16});
-    const wire=new THREE.Mesh(wireGeo,wireMat); group.add(wire);
-
-    const ringMat=new THREE.MeshBasicMaterial({color:0x77cfff,transparent:true,opacity:.23,side:THREE.DoubleSide});
-    const ring1=new THREE.Mesh(new THREE.TorusGeometry(2.1,.008,8,180),ringMat); ring1.rotation.x=1.15; ring1.rotation.z=.35; group.add(ring1);
-    const ring2=new THREE.Mesh(new THREE.TorusGeometry(2.55,.006,8,180),ringMat.clone()); ring2.material.opacity=.12; ring2.rotation.x=1.32; ring2.rotation.z=-.55; group.add(ring2);
-
-    const particlesCount=380; const pos=new Float32Array(particlesCount*3);
-    for(let i=0;i<particlesCount;i++){const r=2.8+Math.random()*2.4; const a=Math.random()*Math.PI*2; const z=(Math.random()-.5)*4.6; pos[i*3]=Math.cos(a)*r; pos[i*3+1]=Math.sin(a)*r; pos[i*3+2]=z;}
-    const pGeo=new THREE.BufferGeometry(); pGeo.setAttribute('position',new THREE.BufferAttribute(pos,3));
-    const pMat=new THREE.PointsMaterial({color:0xb8caff,size:.018,transparent:true,opacity:.55});
-    const points=new THREE.Points(pGeo,pMat); scene.add(points);
-
-    const key=new THREE.PointLight(0x9b7cff,80,12); key.position.set(3,3,4); scene.add(key);
-    const fill=new THREE.PointLight(0x37cfff,42,10); fill.position.set(-3,-2,3); scene.add(fill);
-    scene.add(new THREE.AmbientLight(0xffffff,.48));
-
-    let tx=0,ty=0;
-    stage.addEventListener('pointermove',e=>{const r=stage.getBoundingClientRect(); tx=((e.clientX-r.left)/r.width-.5)*.75; ty=((e.clientY-r.top)/r.height-.5)*.55;},{passive:true});
-    stage.addEventListener('pointerleave',()=>{tx=ty=0});
-
-    const resize=()=>{const r=stage.getBoundingClientRect(); renderer.setSize(r.width,r.height,false); camera.aspect=r.width/r.height; camera.updateProjectionMatrix();};
-    resize(); new ResizeObserver(resize).observe(stage);
-    let last=performance.now();
-    const tick=(now)=>{const dt=Math.min((now-last)/1000,.05); last=now; group.rotation.y+=(tx-group.rotation.y)*.035 + dt*.07; group.rotation.x+=(ty-group.rotation.x)*.035; wire.rotation.y-=dt*.12; points.rotation.z+=dt*.008; ring1.rotation.z+=dt*.04; ring2.rotation.z-=dt*.025; renderer.render(scene,camera); requestAnimationFrame(tick);};
-    requestAnimationFrame(tick);
-    $('.stage-fallback')?.remove();
-  } catch (e) {
-    console.warn('WebGL enhancement unavailable; CSS fallback active.', e);
-  }
-})();
-
+      const copy=document.getElementById('copyLink');
+      copy?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText('https://legendeurbaine.github.io/');const old=copy.textContent;copy.textContent='Lien copié ✓';setTimeout(()=>copy.textContent=old,1600)}catch{location.hash='contact'}})
+    })();
   </script>
-<script>
-
-/* V5: section-aware navigation */
-(() => {
-  const links = [...document.querySelectorAll('.nav-links a[href^="#"]')];
-  const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-  if (!sections.length || !('IntersectionObserver' in window)) return;
-  const byId = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
-  const navObserver = new IntersectionObserver(entries => {
-    const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio-a.intersectionRatio)[0];
-    if (!visible) return;
-    links.forEach(a => a.classList.remove('active'));
-    byId.get(visible.target.id)?.classList.add('active');
-  }, {rootMargin:'-25% 0px -55% 0px', threshold:[0,.2,.5,.8]});
-  sections.forEach(section => navObserver.observe(section));
-})();
-</script>
 </body>
 </html>
