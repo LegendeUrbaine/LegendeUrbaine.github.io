@@ -1,17 +1,20 @@
 # Mathis Boy — Portfolio
 
-Portfolio officiel de Mathis Boy — Full-Stack Developer, Product Builder & AI.
+Portfolio officiel de Mathis Boy / LégendeUrbaine.
 
-Site : https://legendeurbaine.github.io/
+**Live:** https://legendeurbaine.github.io/
 
-## Stack du portfolio
+## V6 — direction 2026
 
-- HTML5 / CSS3 / JavaScript
-- Three.js / WebGL enhancement
-- Responsive design
-- Accessibility / reduced motion
-- SEO / Open Graph / structured metadata
+- Selected work first
+- Case studies: problem → decision → delivery
+- Full-stack / AI automation / infrastructure / Minecraft engineering
+- Responsive and keyboard-accessible
+- Reduced-motion support
+- SEO metadata + JSON-LD
+- robots.txt + sitemap.xml + web manifest
+- No heavy external animation/WebGL library
 
-## Déploiement
+## Deployment
 
-Ce dépôt est destiné à GitHub Pages depuis la branche `main` et la racine `/`.
+GitHub Pages publishes the `main` branch from `/(root)`.
