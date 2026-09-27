@@ -1,0 +1,10 @@
+{
+  "name": "Mathis Boy — Portfolio",
+  "short_name": "Mathis Boy",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080b",
+  "theme_color": "#07080b",
+  "description": "Full-Stack Developer & Product Builder — web, AI automation, infrastructure and Minecraft systems.",
+  "lang": "fr"
+}
